@@ -58,7 +58,7 @@ const translations = {
 		// Blog
 		blogTitle: "Блог",
 		blogReadMore: "читать дальше",
-		blogViewAll: "Смотреть все",
+		blogViewAll: "Смотреть все в Instagram",
 		
 		// Contact Form
 		contactTitle: "Хорошие люди должны размножаться :)",
@@ -75,7 +75,26 @@ const translations = {
 		footerContacts: "Контакты",
 		copyright: "ЗАРОЖДЕНИЕ 2025. Все права защищены",
 		agreement: "Соглашение об использовании",
-		privacy: "Политика конфиденциальности"
+		privacy: "Политика конфиденциальности",
+		
+		// Donation Section
+		donationTitle: "Донорство ооцитов",
+		donationText: "Мы предоставляем услуги по подбору доноров ооцитов с полным медицинским сопровождением. Наша база включает более 300 проверенных доноров различных национальностей.",
+		donationFeature1: "Полное медицинское обследование",
+		donationFeature2: "Психологическое тестирование",
+		donationFeature3: "Юридическое сопровождение",
+		
+		// Surrogate Section
+		surrogateTitle: "Суррогатные мамы",
+		surrogateText: "Профессиональный подбор суррогатных мам с полным медицинским и юридическим сопровождением. Мы гарантируем безопасность и конфиденциальность на всех этапах программы.",
+		step1Title: "Подбор кандидата",
+		step1Text: "Тщательный отбор и проверка всех кандидатов",
+		step2Title: "Медицинское обследование",
+		step2Text: "Полное медицинское обследование и подготовка",
+		step3Title: "Юридическое оформление",
+		step3Text: "Оформление всех необходимых документов",
+		step4Title: "Сопровождение беременности",
+		step4Text: "Постоянный контроль и поддержка"
 	},
 	
 	en: {
@@ -136,7 +155,7 @@ const translations = {
 		// Blog
 		blogTitle: "Blog",
 		blogReadMore: "read more",
-		blogViewAll: "View All",
+		blogViewAll: "View All on Instagram",
 		
 		// Contact Form
 		contactTitle: "Good people should multiply :)",
@@ -153,7 +172,26 @@ const translations = {
 		footerContacts: "Contacts",
 		copyright: "ZAROZHDENIE 2025. All rights reserved",
 		agreement: "Terms of Use",
-		privacy: "Privacy Policy"
+		privacy: "Privacy Policy",
+		
+		// Donation Section
+		donationTitle: "Egg Donation",
+		donationText: "We provide egg donor selection services with full medical support. Our database includes more than 300 verified donors of various nationalities.",
+		donationFeature1: "Complete medical examination",
+		donationFeature2: "Psychological testing",
+		donationFeature3: "Legal support",
+		
+		// Surrogate Section
+		surrogateTitle: "Surrogate Mothers",
+		surrogateText: "Professional selection of surrogate mothers with full medical and legal support. We guarantee safety and confidentiality at all stages of the program.",
+		step1Title: "Candidate Selection",
+		step1Text: "Thorough selection and verification of all candidates",
+		step2Title: "Medical Examination",
+		step2Text: "Complete medical examination and preparation",
+		step3Title: "Legal Registration",
+		step3Text: "Registration of all necessary documents",
+		step4Title: "Pregnancy Support",
+		step4Text: "Constant monitoring and support"
 	},
 	
 	cn: {
@@ -214,7 +252,7 @@ const translations = {
 		// Blog
 		blogTitle: "博客",
 		blogReadMore: "阅读更多",
-		blogViewAll: "查看全部",
+		blogViewAll: "在Instagram上查看全部",
 		
 		// Contact Form
 		contactTitle: "好人应该繁衍 :)",
@@ -231,7 +269,26 @@ const translations = {
 		footerContacts: "联系方式",
 		copyright: "起源 2025. 版权所有",
 		agreement: "使用条款",
-		privacy: "隐私政策"
+		privacy: "隐私政策",
+		
+		// Donation Section
+		donationTitle: "卵子捐赠",
+		donationText: "我们提供卵子捐赠者选择服务，提供完整的医疗支持。我们的数据库包括300多名经过验证的不同国籍捐赠者。",
+		donationFeature1: "完整医疗检查",
+		donationFeature2: "心理测试",
+		donationFeature3: "法律支持",
+		
+		// Surrogate Section
+		surrogateTitle: "代孕妈妈",
+		surrogateText: "专业选择代孕妈妈，提供完整的医疗和法律支持。我们保证在项目的所有阶段都提供安全和保密性。",
+		step1Title: "候选人选择",
+		step1Text: "仔细选择和验证所有候选人",
+		step2Title: "医疗检查",
+		step2Text: "完整医疗检查和准备",
+		step3Title: "法律注册",
+		step3Text: "注册所有必要文件",
+		step4Title: "妊娠支持",
+		step4Text: "持续监控和支持"
 	}
 };
 

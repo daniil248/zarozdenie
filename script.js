@@ -52,6 +52,29 @@ function translatePage(lang) {
 			btn.classList.add('active');
 		}
 	});
+	
+	// Update privacy and terms links based on language
+	const privacyLinks = document.querySelectorAll('.privacy-link, a[href*="privacy-policy"]');
+	privacyLinks.forEach(link => {
+		if (lang === 'en') {
+			link.href = 'privacy-policy-en.html';
+		} else if (lang === 'cn') {
+			link.href = 'privacy-policy-cn.html';
+		} else {
+			link.href = 'privacy-policy.html';
+		}
+	});
+	
+	const termsLinks = document.querySelectorAll('a[href*="terms-of-use"]');
+	termsLinks.forEach(link => {
+		if (lang === 'en') {
+			link.href = 'terms-of-use-en.html';
+		} else if (lang === 'cn') {
+			link.href = 'terms-of-use-cn.html';
+		} else {
+			link.href = 'terms-of-use.html';
+		}
+	});
 }
 
 // Initialize translations
@@ -59,6 +82,52 @@ if (typeof translations !== 'undefined') {
 	// Add translations to window for access
 	window.translations = translations;
 }
+
+// Blog articles content
+const blogArticles = {
+	1: {
+		ru: {
+			title: "Решаем проблему «Бесплодия» с помощью ЭКО",
+			content: "<p>Современные методы экстракорпорального оплодотворения позволяют многим парам обрести счастье родительства. Мы используем передовые технологии и индивидуальный подход к каждой паре.</p><p>ЭКО (экстракорпоральное оплодотворение) — это современный метод лечения бесплодия, который помогает парам, столкнувшимся с проблемами зачатия. Наша клиника использует только проверенные и безопасные методы.</p><p>Процесс включает несколько этапов: стимуляцию овуляции, забор яйцеклеток, оплодотворение в лаборатории и перенос эмбрионов. Каждый этап контролируется опытными специалистами.</p>"
+		},
+		en: {
+			title: "Solving the Problem of Infertility with IVF",
+			content: "<p>Modern methods of in vitro fertilization allow many couples to find the happiness of parenthood. We use advanced technologies and an individual approach to each couple.</p><p>IVF (in vitro fertilization) is a modern method of treating infertility that helps couples facing conception problems. Our clinic uses only proven and safe methods.</p><p>The process includes several stages: ovulation stimulation, egg retrieval, fertilization in the laboratory, and embryo transfer. Each stage is controlled by experienced specialists.</p>"
+		},
+		cn: {
+			title: "通过试管婴儿解决不孕问题",
+			content: "<p>现代体外受精方法使许多夫妇能够找到为人父母的幸福。我们对每对夫妇使用先进技术和个性化方法。</p><p>试管婴儿（体外受精）是一种治疗不孕的现代方法，帮助面临受孕问题的夫妇。我们的诊所只使用经过验证的安全方法。</p><p>该过程包括几个阶段：促排卵、取卵、实验室受精和胚胎移植。每个阶段都由经验丰富的专家控制。</p>"
+		}
+	},
+	2: {
+		ru: {
+			title: "Донорство / суррогатное материнство",
+			content: "<p>Профессиональная поддержка на всех этапах программы донорства и суррогатного материнства. Полное юридическое и медицинское сопровождение.</p><p>Донорство ооцитов и суррогатное материнство — это сложные процессы, требующие профессионального подхода. Мы обеспечиваем полное сопровождение на всех этапах.</p><p>Наша команда включает опытных врачей, юристов и психологов, которые работают вместе, чтобы обеспечить успешный результат для всех участников программы.</p>"
+		},
+		en: {
+			title: "Donation / Surrogacy",
+			content: "<p>Professional support at all stages of the donation and surrogacy program. Full legal and medical support.</p><p>Egg donation and surrogacy are complex processes that require a professional approach. We provide full support at all stages.</p><p>Our team includes experienced doctors, lawyers, and psychologists who work together to ensure a successful outcome for all program participants.</p>"
+		},
+		cn: {
+			title: "捐赠 / 代孕",
+			content: "<p>在捐赠和代孕项目的所有阶段提供专业支持。完整的法律和医疗支持。</p><p>卵子捐赠和代孕是复杂的流程，需要专业方法。我们在所有阶段提供全面支持。</p><p>我们的团队包括经验丰富的医生、律师和心理学家，他们共同努力确保所有项目参与者的成功结果。</p>"
+		}
+	},
+	3: {
+		ru: {
+			title: "ЗАРОЖДЕНИЕ — ваш надежный партнер",
+			content: "<p>Мы помогаем парам обрести счастье родительства с помощью современных репродуктивных технологий. Более 10 лет опыта в области репродуктивной медицины.</p><p>ЗАРОЖДЕНИЕ — это команда профессионалов, которая помогает парам стать родителями. Мы используем только проверенные методы и индивидуальный подход к каждому случаю.</p><p>Наш опыт и профессионализм позволяют нам достигать высоких результатов. Мы гордимся тем, что помогаем создавать новые семьи.</p>"
+		},
+		en: {
+			title: "ZAROZHDENIE — Your Reliable Partner",
+			content: "<p>We help couples find the happiness of parenthood through modern reproductive technologies. More than 10 years of experience in reproductive medicine.</p><p>ZAROZHDENIE is a team of professionals who help couples become parents. We use only proven methods and an individual approach to each case.</p><p>Our experience and professionalism allow us to achieve high results. We are proud to help create new families.</p>"
+		},
+		cn: {
+			title: "起源 — 您的可靠合作伙伴",
+			content: "<p>我们通过现代生殖技术帮助夫妇找到为人父母的幸福。在生殖医学领域拥有超过10年的经验。</p><p>起源是一个专业团队，帮助夫妇成为父母。我们只使用经过验证的方法和对每个案例的个性化方法。</p><p>我们的经验和专业性使我们能够取得高成果。我们为帮助创建新家庭而感到自豪。</p>"
+		}
+	}
+};
 
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
@@ -97,10 +166,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 	
-	// Smooth scrolling for anchor links
+	// Smooth scrolling for anchor links (excluding language buttons and blog links)
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
 			const href = this.getAttribute('href');
+			// Skip if it's a language button or blog link
+			if (this.classList.contains('lang-btn') || this.classList.contains('blog-link')) {
+				return;
+			}
 			if (href !== '#' && href !== '') {
 				e.preventDefault();
 				const target = document.querySelector(href);
@@ -114,8 +187,46 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 	
+	// Blog modal functionality
+	const blogModal = document.getElementById('blog-modal');
+	const blogLinks = document.querySelectorAll('.blog-link');
+	const closeModal = document.querySelector('.blog-modal-close');
+	
+	blogLinks.forEach(link => {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			const articleId = this.getAttribute('data-article');
+			const article = blogArticles[articleId];
+			
+			if (article && article[currentLang]) {
+				const modalBody = document.getElementById('blog-modal-body');
+				modalBody.innerHTML = `
+					<h2>${article[currentLang].title}</h2>
+					${article[currentLang].content}
+				`;
+				blogModal.style.display = 'block';
+				document.body.style.overflow = 'hidden';
+			}
+		});
+	});
+	
+	if (closeModal) {
+		closeModal.addEventListener('click', function() {
+			blogModal.style.display = 'none';
+			document.body.style.overflow = 'auto';
+		});
+	}
+	
+	// Close modal when clicking outside
+	window.addEventListener('click', function(e) {
+		if (e.target === blogModal) {
+			blogModal.style.display = 'none';
+			document.body.style.overflow = 'auto';
+		}
+	});
+	
 	// Form submission handler
-	const contactForm = document.querySelector('.contact-form');
+	const contactForm = document.getElementById('main-contact-form');
 	if (contactForm) {
 		contactForm.addEventListener('submit', function(e) {
 			e.preventDefault();
@@ -130,7 +241,14 @@ document.addEventListener('DOMContentLoaded', function() {
 				message = '感谢您的请求！我们会尽快与您联系。';
 			}
 			
+			// Here you can add actual form submission logic
+			// For now, we'll just show an alert and optionally send to WhatsApp
 			alert(message);
+			
+			// Optional: Open WhatsApp with pre-filled message
+			const whatsappMessage = encodeURIComponent(`Здравствуйте! Меня зовут ${name}, мой телефон: ${phone}. Хочу получить консультацию.`);
+			window.open(`https://wa.me/77078799987?text=${whatsappMessage}`, '_blank');
+			
 			this.reset();
 		});
 	}
@@ -140,6 +258,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (favoriteBtn) {
 		favoriteBtn.addEventListener('click', function() {
 			this.classList.toggle('active');
+		});
+	}
+	
+	// Fix logo link
+	const logoLink = document.querySelector('.logo-link');
+	if (logoLink) {
+		logoLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
 		});
 	}
 });

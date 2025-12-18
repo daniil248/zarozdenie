@@ -946,6 +946,25 @@ section {
 		width: 100%;
 		text-align: center;
 	}
+	
+	.surrogate-steps {
+		grid-template-columns: 1fr;
+	}
+	
+	.contacts-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.donation-features {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.blog-modal-content {
+		width: 95%;
+		padding: 20px;
+		margin: 10% auto;
+	}
 }
 
 /* Additional Styles from Original CSS */
@@ -994,5 +1013,254 @@ section {
 /* Join chat */
 .joinchat--chatbox .joinchat__button:active, .joinchat--chatbox .joinchat__button:hover {
 	background: #3E31E1 !important;
+}
+
+/* Donation Section */
+.donation-section {
+	background-color: #F8F7FF;
+	padding: 60px 0;
+}
+
+.donation-content {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.donation-text {
+	font-size: 18px;
+	line-height: 27px;
+	color: #0D0664;
+	margin-bottom: 40px;
+}
+
+.donation-features {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.donation-feature {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+	color: #0D0664;
+}
+
+.donation-feature i {
+	color: #4435FF;
+	font-size: 20px;
+}
+
+/* Surrogate Section */
+.surrogate-section {
+	background-color: #fff;
+	padding: 60px 0;
+}
+
+.surrogate-content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.surrogate-text {
+	font-size: 18px;
+	line-height: 27px;
+	color: #0D0664;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.surrogate-steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.step {
+	text-align: center;
+	padding: 30px 20px;
+	background-color: #F8F7FF;
+	border-radius: 10px;
+	transition: transform 0.3s;
+}
+
+.step:hover {
+	transform: translateY(-5px);
+}
+
+.step-number {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #4435FF;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	font-weight: 700;
+	margin: 0 auto 20px;
+}
+
+.step h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0D0664;
+	margin-bottom: 10px;
+}
+
+.step p {
+	font-size: 16px;
+	color: #8F8CB4;
+	line-height: 24px;
+}
+
+/* Contacts Section */
+.contacts-section {
+	background-color: #F8F7FF;
+	padding: 60px 0;
+}
+
+.contacts-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.contact-card {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	transition: transform 0.3s;
+}
+
+.contact-card:hover {
+	transform: translateY(-5px);
+}
+
+.contact-card i {
+	font-size: 40px;
+	color: #4435FF;
+	margin-bottom: 20px;
+}
+
+.contact-card h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0D0664;
+	margin-bottom: 15px;
+}
+
+.contact-card a {
+	display: block;
+	font-size: 18px;
+	color: #0D0664;
+	text-decoration: none;
+	margin-bottom: 10px;
+	transition: color 0.3s;
+}
+
+.contact-card a:hover {
+	color: #4435FF;
+}
+
+.whatsapp-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: #25d366 !important;
+	font-weight: 600;
+}
+
+.whatsapp-link:hover {
+	color: #20ba5a !important;
+}
+
+/* Blog Modal */
+.blog-modal {
+	display: none;
+	position: fixed;
+	z-index: 2000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.blog-modal-content {
+	background-color: #fff;
+	margin: 5% auto;
+	padding: 40px;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 800px;
+	position: relative;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.blog-modal-close {
+	color: #0D0664;
+	float: right;
+	font-size: 32px;
+	font-weight: bold;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.blog-modal-close:hover {
+	color: #4435FF;
+}
+
+#blog-modal-body {
+	margin-top: 20px;
+}
+
+#blog-modal-body h2 {
+	font-size: 28px;
+	color: #0D0664;
+	margin-bottom: 20px;
+}
+
+#blog-modal-body p {
+	font-size: 16px;
+	line-height: 27px;
+	color: #0D0664;
+	margin-bottom: 15px;
+}
+
+/* Privacy and Terms Links */
+.privacy-link, .footer-link {
+	color: #4435FF;
+	text-decoration: none;
+	transition: text-decoration 0.3s;
+}
+
+.privacy-link:hover, .footer-link:hover {
+	text-decoration: underline;
+}
+
+/* Image fallback */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Logo link fix */
+.logo-link {
+	cursor: pointer;
 }
 
