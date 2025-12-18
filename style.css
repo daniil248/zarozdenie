@@ -37,9 +37,27 @@ body {
 	align-items: center;
 }
 
-.logo img {
-	max-height: 60px;
-	width: auto;
+.logo a {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.logo-text {
+	font-size: 28px;
+	font-weight: 700;
+	color: #0D0664;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	font-family: "Nunito", sans-serif;
+}
+
+.logo-subtitle {
+	font-size: 12px;
+	font-weight: 400;
+	color: #0D0664;
+	letter-spacing: 1px;
 }
 
 .main-nav ul {
@@ -66,6 +84,34 @@ body {
 
 #navbar_header a:hover {
 	color: #4435FF;
+}
+
+/* Language Switcher */
+.lang-switcher {
+	display: flex;
+	gap: 5px;
+	margin-left: 10px;
+}
+
+.lang-btn {
+	padding: 5px 12px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.3s;
+	background-color: transparent;
+	border: 1px solid #0D0664;
+	color: #0D0664;
+}
+
+.lang-btn:hover {
+	background-color: #0D0664;
+	color: #fff;
+}
+
+.lang-btn.active {
+	background-color: #0D0664;
+	color: #fff;
 }
 
 .mobile-menu-toggle {
@@ -155,11 +201,68 @@ body {
 .hero-image {
 	flex: 1;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.hero-image img {
-	max-width: 100%;
-	height: auto;
+.hero-logo {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.logo-circle {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid #0D0664;
+	position: relative;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-circle::before,
+.logo-circle::after {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	border: 2.5px solid #0D0664;
+	border-radius: 50% 50% 50% 0;
+	background: transparent;
+}
+
+.logo-circle::before {
+	top: 8%;
+	left: 12%;
+	transform: rotate(-30deg);
+	border-right: none;
+	border-bottom: none;
+}
+
+.logo-circle::after {
+	bottom: 8%;
+	right: 12%;
+	transform: rotate(150deg);
+	border-left: none;
+	border-top: none;
+}
+
+/* Embryo shape in center */
+.hero-logo::after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #0D0664;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.4;
 }
 
 /* Section Styles */
@@ -562,18 +665,29 @@ section {
 }
 
 .contact-info li {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 .contact-info a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 16px;
+	font-weight: 600;
 	transition: color 0.3s;
 }
 
 .contact-info a:hover {
 	color: #E8E7FF;
+}
+
+.contact-name {
+	color: #E8E7FF;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 5px;
 }
 
 .social-icons {
@@ -642,6 +756,22 @@ section {
 .whatsapp-button a:hover {
 	background-color: #20ba5a;
 	transform: scale(1.1);
+}
+
+/* Blog read more arrow */
+.btn_news_full a {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.btn_news_full i {
+	font-size: 14px;
+	transition: transform 0.3s;
+}
+
+.btn_news_full a:hover i {
+	transform: translateX(5px);
 }
 
 /* Clear floats */
@@ -735,6 +865,24 @@ section {
 	#navbar_header li {
 		margin-right: 0;
 		margin-bottom: 15px;
+	}
+	
+	.lang-switcher {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	.logo-text {
+		font-size: 22px;
+	}
+	
+	.logo-subtitle {
+		font-size: 10px;
+	}
+	
+	.hero-logo {
+		width: 150px;
+		height: 150px;
 	}
 	
 	.hero-title {
