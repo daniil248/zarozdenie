@@ -23,8 +23,7 @@ body {
 	background-color: #fff;
 	padding: 20px 0;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	position: sticky;
-	top: 0;
+	position: relative;
 	z-index: 1000;
 }
 
@@ -45,7 +44,7 @@ body {
 }
 
 .logo-image {
-	height: 75px;
+	height: 145px;
 	width: auto;
 	display: block;
 }
@@ -855,7 +854,7 @@ section {
 	}
 	
 	.logo-image {
-		height: 50px;
+		height: 80px;
 	}
 	
 	.hero-logo {
