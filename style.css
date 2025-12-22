@@ -345,12 +345,12 @@ section {
 
 /* Health Section */
 .health-section {
-	background-color: #F5F0FA;
+	background: linear-gradient(180deg, #F5F9FC 0%, #FFFFFF 100%);
 }
 
 /* Blog Section */
 .blog-section {
-	background-color: #fff;
+	background: linear-gradient(180deg, #FFFFFF 0%, #F0F8FF 100%);
 }
 
 .blog__inner {
@@ -432,7 +432,7 @@ section {
 
 /* Contact Form Section */
 .contact-section {
-	background-color: #F5F0FA;
+	background: linear-gradient(180deg, #F5F9FC 0%, #E8F4F8 100%);
 }
 
 .contact-form-wrapper {
@@ -995,7 +995,7 @@ section {
 
 /* Donation Section */
 .donation-section {
-	background-color: #F5F0FA;
+	background: linear-gradient(180deg, #F0F8FF 0%, #F5F9FC 100%);
 	padding: 60px 0;
 }
 
@@ -1035,7 +1035,7 @@ section {
 
 /* Surrogate Section */
 .surrogate-section {
-	background-color: #fff;
+	background: linear-gradient(180deg, #FFFFFF 0%, #F0F8FF 100%);
 	padding: 60px 0;
 }
 
@@ -1240,5 +1240,318 @@ img {
 /* Logo link fix */
 .logo-link {
 	cursor: pointer;
+}
+
+/* Winter Theme Styles */
+body {
+	background: linear-gradient(180deg, #E8F4F8 0%, #F0F8FF 50%, #FFFFFF 100%);
+	position: relative;
+}
+
+/* Snow Animation Container */
+.snow-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.snowflake {
+	position: absolute;
+	top: -10px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.2em;
+	font-family: Arial, sans-serif;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+	animation: snowfall linear infinite;
+	opacity: 0.7;
+}
+
+.snowflake:nth-child(1) {
+	left: 10%;
+	animation-duration: 10s;
+	animation-delay: 0s;
+	font-size: 1em;
+}
+
+.snowflake:nth-child(2) {
+	left: 20%;
+	animation-duration: 12s;
+	animation-delay: 1s;
+	font-size: 1.1em;
+}
+
+.snowflake:nth-child(3) {
+	left: 30%;
+	animation-duration: 14s;
+	animation-delay: 2s;
+	font-size: 0.9em;
+}
+
+.snowflake:nth-child(4) {
+	left: 40%;
+	animation-duration: 11s;
+	animation-delay: 0.5s;
+	font-size: 1.2em;
+}
+
+.snowflake:nth-child(5) {
+	left: 50%;
+	animation-duration: 13s;
+	animation-delay: 1.5s;
+	font-size: 1em;
+}
+
+.snowflake:nth-child(6) {
+	left: 60%;
+	animation-duration: 15s;
+	animation-delay: 2.5s;
+	font-size: 1.1em;
+}
+
+.snowflake:nth-child(7) {
+	left: 70%;
+	animation-duration: 10s;
+	animation-delay: 0.3s;
+	font-size: 0.95em;
+}
+
+.snowflake:nth-child(8) {
+	left: 80%;
+	animation-duration: 12s;
+	animation-delay: 1.2s;
+	font-size: 1.15em;
+}
+
+.snowflake:nth-child(9) {
+	left: 90%;
+	animation-duration: 14s;
+	animation-delay: 2.2s;
+	font-size: 1.05em;
+}
+
+.snowflake:nth-child(10) {
+	left: 15%;
+	animation-duration: 11s;
+	animation-delay: 0.7s;
+	font-size: 0.9em;
+}
+
+.snowflake:nth-child(11) {
+	left: 25%;
+	animation-duration: 13s;
+	animation-delay: 1.7s;
+	font-size: 1.2em;
+}
+
+.snowflake:nth-child(12) {
+	left: 35%;
+	animation-duration: 15s;
+	animation-delay: 2.7s;
+	font-size: 1em;
+}
+
+.snowflake:nth-child(13) {
+	left: 45%;
+	animation-duration: 10s;
+	animation-delay: 0.2s;
+	font-size: 1.1em;
+}
+
+.snowflake:nth-child(14) {
+	left: 55%;
+	animation-duration: 12s;
+	animation-delay: 1.3s;
+	font-size: 0.95em;
+}
+
+.snowflake:nth-child(15) {
+	left: 65%;
+	animation-duration: 14s;
+	animation-delay: 2.3s;
+	font-size: 1.15em;
+}
+
+.snowflake:nth-child(16) {
+	left: 75%;
+	animation-duration: 11s;
+	animation-delay: 0.6s;
+	font-size: 1.05em;
+}
+
+.snowflake:nth-child(17) {
+	left: 85%;
+	animation-duration: 13s;
+	animation-delay: 1.6s;
+	font-size: 0.9em;
+}
+
+.snowflake:nth-child(18) {
+	left: 95%;
+	animation-duration: 15s;
+	animation-delay: 2.6s;
+	font-size: 1.2em;
+}
+
+.snowflake:nth-child(19) {
+	left: 5%;
+	animation-duration: 12s;
+	animation-delay: 0.8s;
+	font-size: 1em;
+}
+
+.snowflake:nth-child(20) {
+	left: 50%;
+	animation-duration: 14s;
+	animation-delay: 1.8s;
+	font-size: 1.1em;
+}
+
+@keyframes snowfall {
+	0% {
+		transform: translateY(0) translateX(0) rotate(0deg);
+		opacity: 0.7;
+	}
+	50% {
+		transform: translateY(50vh) translateX(50px) rotate(180deg);
+		opacity: 0.8;
+	}
+	100% {
+		transform: translateY(100vh) translateX(-50px) rotate(360deg);
+		opacity: 0.3;
+	}
+}
+
+/* Winter Color Scheme Updates */
+.site-header {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 255, 0.95) 100%);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 15px rgba(100, 150, 200, 0.2);
+	border-bottom: 1px solid rgba(200, 220, 240, 0.5);
+}
+
+.hero-section {
+	background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 50%, #FFFFFF 100%);
+	position: relative;
+}
+
+.hero-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: 
+		radial-gradient(circle at 20% 50%, rgba(200, 230, 255, 0.3) 0%, transparent 50%),
+		radial-gradient(circle at 80% 80%, rgba(180, 220, 255, 0.2) 0%, transparent 50%);
+	pointer-events: none;
+}
+
+.services-section {
+	background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FC 100%);
+}
+
+.service-card {
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 4px 15px rgba(150, 180, 220, 0.15);
+	border: 1px solid rgba(200, 220, 240, 0.3);
+	transition: all 0.3s ease;
+}
+
+.service-card:hover {
+	box-shadow: 0 6px 25px rgba(150, 180, 220, 0.25);
+	transform: translateY(-5px);
+	background: rgba(255, 255, 255, 1);
+}
+
+.btn-primary {
+	background: linear-gradient(135deg, #5B8FA8 0%, #4A7A95 100%);
+	box-shadow: 0 4px 15px rgba(91, 143, 168, 0.3);
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background: linear-gradient(135deg, #4A7A95 0%, #3A6A85 100%);
+	box-shadow: 0 6px 20px rgba(91, 143, 168, 0.4);
+	transform: translateY(-2px);
+}
+
+.btn-secondary {
+	background: rgba(240, 248, 255, 0.9);
+	border: 1px solid rgba(150, 180, 220, 0.5);
+	transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+	background: rgba(230, 240, 250, 1);
+	box-shadow: 0 4px 15px rgba(150, 180, 220, 0.2);
+}
+
+.section-title {
+	color: #3A5F7A;
+	text-shadow: 0 2px 10px rgba(150, 180, 220, 0.2);
+}
+
+/* Winter accent colors */
+.service-icon {
+	color: #5B8FA8;
+}
+
+#navbar_header a {
+	color: #3A5F7A;
+}
+
+#navbar_header a:hover {
+	color: #5B8FA8;
+}
+
+.lang-switcher {
+	border: 1px solid rgba(150, 180, 220, 0.5);
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.lang-btn.active {
+	background: linear-gradient(135deg, #5B8FA8 0%, #4A7A95 100%);
+	color: #fff;
+}
+
+/* Winter Form Styles */
+.contact-form_home input[type=text], 
+.contact-form_home input[type=tel],
+.contact-form_home textarea {
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid rgba(150, 180, 220, 0.4) !important;
+	box-shadow: 0 2px 10px rgba(150, 180, 220, 0.1);
+	transition: all 0.3s ease;
+}
+
+.contact-form_home input[type=text]:focus, 
+.contact-form_home input[type=tel]:focus,
+.contact-form_home textarea:focus {
+	border-color: rgba(91, 143, 168, 0.6) !important;
+	box-shadow: 0 4px 15px rgba(91, 143, 168, 0.2);
+	outline: none;
+	background: rgba(255, 255, 255, 1);
+}
+
+/* Winter card hover effects */
+.news_home-page {
+	transition: all 0.3s ease;
+}
+
+.news_home-page:hover {
+	transform: translateY(-5px);
+}
+
+/* Responsive adjustments for snow */
+@media (max-width: 768px) {
+	.snowflake {
+		font-size: 0.8em;
+	}
 }
 
