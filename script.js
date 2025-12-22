@@ -234,8 +234,37 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (contactForm) {
 		contactForm.addEventListener('submit', function(e) {
 			e.preventDefault();
-			const name = this.querySelector('input[name="name"]').value;
-			const phone = this.querySelector('input[name="phone"]').value;
+			const nameInput = this.querySelector('input[name="name"]');
+			const phoneInput = this.querySelector('input[name="phone"]');
+			const name = nameInput.value.trim();
+			const phone = phoneInput.value.trim();
+			
+			// Basic validation
+			if (!name || name.length < 2) {
+				let errorMsg = 'Пожалуйста, введите ваше имя (минимум 2 символа).';
+				if (currentLang === 'en') {
+					errorMsg = 'Please enter your name (minimum 2 characters).';
+				} else if (currentLang === 'cn') {
+					errorMsg = '请输入您的姓名（至少2个字符）。';
+				}
+				alert(errorMsg);
+				nameInput.focus();
+				return;
+			}
+			
+			// Phone validation (basic - should start with + or contain digits)
+			const phoneRegex = /^[\+]?[0-9\s\-\(\)]{7,}$/;
+			if (!phone || !phoneRegex.test(phone)) {
+				let errorMsg = 'Пожалуйста, введите корректный номер телефона.';
+				if (currentLang === 'en') {
+					errorMsg = 'Please enter a valid phone number.';
+				} else if (currentLang === 'cn') {
+					errorMsg = '请输入有效的电话号码。';
+				}
+				alert(errorMsg);
+				phoneInput.focus();
+				return;
+			}
 			
 			// Get translated message
 			let message = 'Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.';
@@ -245,8 +274,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				message = '感谢您的请求！我们会尽快与您联系。';
 			}
 			
-			// Here you can add actual form submission logic
-			// For now, we'll just show an alert and optionally send to WhatsApp
+			// Here you can add actual form submission logic (e.g., send to server)
+			// For now, we'll show an alert and optionally send to WhatsApp
 			alert(message);
 			
 			// Optional: Open WhatsApp with pre-filled message
@@ -276,4 +305,25 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 	}
+	
+	// Load Instagram background images for contact cards
+	const contactCards = document.querySelectorAll('.contact-card[data-instagram-bg]');
+	contactCards.forEach(card => {
+		const bgUrl = card.getAttribute('data-instagram-bg');
+		if (bgUrl) {
+			// Set CSS variable for ::before pseudo-element
+			card.style.setProperty('--bg-image', `url(${bgUrl})`);
+			
+			// Preload image to ensure it's ready
+			const bgImage = new Image();
+			bgImage.onload = function() {
+				// Image loaded successfully, CSS variable is already set
+			};
+			bgImage.onerror = function() {
+				// Fallback to gradient if image fails to load
+				card.style.setProperty('--bg-image', 'linear-gradient(135deg, rgba(107, 76, 138, 0.1) 0%, rgba(64, 42, 84, 0.1) 100%)');
+			};
+			bgImage.src = bgUrl;
+		}
+	});
 });
