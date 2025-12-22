@@ -10,6 +10,58 @@ body {
 	color: #402A54;
 	line-height: 1.6;
 	background-color: #fff;
+	position: relative;
+	background-image: 
+		/* Soft gradient overlay with corporate colors */
+		linear-gradient(135deg, rgba(245, 240, 250, 0.3) 0%, rgba(232, 221, 240, 0.2) 50%, rgba(255, 255, 255, 0.1) 100%),
+		/* Light dots pattern - subtle snow effect */
+		radial-gradient(circle at 15% 25%, rgba(107, 76, 138, 0.02) 1.5px, transparent 1.5px),
+		radial-gradient(circle at 85% 75%, rgba(107, 76, 138, 0.02) 1.5px, transparent 1.5px),
+		radial-gradient(circle at 50% 50%, rgba(107, 76, 138, 0.015) 1px, transparent 1px);
+	background-size: 
+		100% 100%,
+		200px 200px,
+		180px 180px,
+		250px 250px;
+	background-position:
+		0 0,
+		0 0,
+		0 0,
+		0 0;
+	background-repeat: no-repeat, repeat, repeat, repeat;
+}
+
+/* Decorative corner branches - very subtle */
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1;
+	opacity: 0.08;
+	background-image: 
+		/* Top-left branch */
+		radial-gradient(ellipse 300px 400px at 0% 0%, rgba(107, 76, 138, 0.4) 0%, transparent 70%),
+		/* Top-right branch */
+		radial-gradient(ellipse 300px 400px at 100% 0%, rgba(107, 76, 138, 0.4) 0%, transparent 70%),
+		/* Bottom-left branch */
+		radial-gradient(ellipse 300px 400px at 0% 100%, rgba(107, 76, 138, 0.4) 0%, transparent 70%),
+		/* Bottom-right branch */
+		radial-gradient(ellipse 300px 400px at 100% 100%, rgba(107, 76, 138, 0.4) 0%, transparent 70%);
+	background-size: 500px 600px, 500px 600px, 500px 600px, 500px 600px;
+	background-position: top left, top right, bottom left, bottom right;
+	background-repeat: no-repeat;
+}
+
+/* Ensure content is above background */
+.container,
+.site-header,
+section {
+	position: relative;
+	z-index: 2;
 }
 
 .container {
@@ -345,12 +397,12 @@ section {
 
 /* Health Section */
 .health-section {
-	background: linear-gradient(180deg, #F5F9FC 0%, #FFFFFF 100%);
+	background-color: #F5F0FA;
 }
 
 /* Blog Section */
 .blog-section {
-	background: linear-gradient(180deg, #FFFFFF 0%, #F0F8FF 100%);
+	background-color: #fff;
 }
 
 .blog__inner {
@@ -432,7 +484,7 @@ section {
 
 /* Contact Form Section */
 .contact-section {
-	background: linear-gradient(180deg, #F5F9FC 0%, #E8F4F8 100%);
+	background-color: #F5F0FA;
 }
 
 .contact-form-wrapper {
@@ -995,7 +1047,7 @@ section {
 
 /* Donation Section */
 .donation-section {
-	background: linear-gradient(180deg, #F0F8FF 0%, #F5F9FC 100%);
+	background-color: #F5F0FA;
 	padding: 60px 0;
 }
 
@@ -1035,7 +1087,7 @@ section {
 
 /* Surrogate Section */
 .surrogate-section {
-	background: linear-gradient(180deg, #FFFFFF 0%, #F0F8FF 100%);
+	background-color: #fff;
 	padding: 60px 0;
 }
 
@@ -1242,11 +1294,7 @@ img {
 	cursor: pointer;
 }
 
-/* Winter Theme Styles */
-body {
-	background: linear-gradient(180deg, #E8F4F8 0%, #F0F8FF 50%, #FFFFFF 100%);
-	position: relative;
-}
+/* Winter Theme Styles - Snow only, corporate colors restored */
 
 /* Snow Animation Container */
 .snow-container {
@@ -1411,6 +1459,34 @@ body {
 	font-size: 1.1em;
 }
 
+.snowflake:nth-child(21) {
+	left: 12%;
+	animation-duration: 11s;
+	animation-delay: 0.4s;
+	font-size: 1.05em;
+}
+
+.snowflake:nth-child(22) {
+	left: 28%;
+	animation-duration: 13s;
+	animation-delay: 1.4s;
+	font-size: 0.95em;
+}
+
+.snowflake:nth-child(23) {
+	left: 42%;
+	animation-duration: 15s;
+	animation-delay: 2.4s;
+	font-size: 1.15em;
+}
+
+.snowflake:nth-child(24) {
+	left: 58%;
+	animation-duration: 12s;
+	animation-delay: 0.9s;
+	font-size: 1em;
+}
+
 @keyframes snowfall {
 	0% {
 		transform: translateY(0) translateX(0) rotate(0deg);
@@ -1426,120 +1502,9 @@ body {
 	}
 }
 
-/* Winter Color Scheme Updates */
-.site-header {
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 255, 0.95) 100%);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 2px 15px rgba(100, 150, 200, 0.2);
-	border-bottom: 1px solid rgba(200, 220, 240, 0.5);
-}
+/* Corporate colors restored - keeping only snow animation */
 
-.hero-section {
-	background: linear-gradient(135deg, #E8F4F8 0%, #F0F8FF 50%, #FFFFFF 100%);
-	position: relative;
-}
-
-.hero-section::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: 
-		radial-gradient(circle at 20% 50%, rgba(200, 230, 255, 0.3) 0%, transparent 50%),
-		radial-gradient(circle at 80% 80%, rgba(180, 220, 255, 0.2) 0%, transparent 50%);
-	pointer-events: none;
-}
-
-.services-section {
-	background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FC 100%);
-}
-
-.service-card {
-	background: rgba(255, 255, 255, 0.9);
-	box-shadow: 0 4px 15px rgba(150, 180, 220, 0.15);
-	border: 1px solid rgba(200, 220, 240, 0.3);
-	transition: all 0.3s ease;
-}
-
-.service-card:hover {
-	box-shadow: 0 6px 25px rgba(150, 180, 220, 0.25);
-	transform: translateY(-5px);
-	background: rgba(255, 255, 255, 1);
-}
-
-.btn-primary {
-	background: linear-gradient(135deg, #5B8FA8 0%, #4A7A95 100%);
-	box-shadow: 0 4px 15px rgba(91, 143, 168, 0.3);
-	transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-	background: linear-gradient(135deg, #4A7A95 0%, #3A6A85 100%);
-	box-shadow: 0 6px 20px rgba(91, 143, 168, 0.4);
-	transform: translateY(-2px);
-}
-
-.btn-secondary {
-	background: rgba(240, 248, 255, 0.9);
-	border: 1px solid rgba(150, 180, 220, 0.5);
-	transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-	background: rgba(230, 240, 250, 1);
-	box-shadow: 0 4px 15px rgba(150, 180, 220, 0.2);
-}
-
-.section-title {
-	color: #3A5F7A;
-	text-shadow: 0 2px 10px rgba(150, 180, 220, 0.2);
-}
-
-/* Winter accent colors */
-.service-icon {
-	color: #5B8FA8;
-}
-
-#navbar_header a {
-	color: #3A5F7A;
-}
-
-#navbar_header a:hover {
-	color: #5B8FA8;
-}
-
-.lang-switcher {
-	border: 1px solid rgba(150, 180, 220, 0.5);
-	background: rgba(255, 255, 255, 0.9);
-}
-
-.lang-btn.active {
-	background: linear-gradient(135deg, #5B8FA8 0%, #4A7A95 100%);
-	color: #fff;
-}
-
-/* Winter Form Styles */
-.contact-form_home input[type=text], 
-.contact-form_home input[type=tel],
-.contact-form_home textarea {
-	background: rgba(255, 255, 255, 0.95);
-	border: 1px solid rgba(150, 180, 220, 0.4) !important;
-	box-shadow: 0 2px 10px rgba(150, 180, 220, 0.1);
-	transition: all 0.3s ease;
-}
-
-.contact-form_home input[type=text]:focus, 
-.contact-form_home input[type=tel]:focus,
-.contact-form_home textarea:focus {
-	border-color: rgba(91, 143, 168, 0.6) !important;
-	box-shadow: 0 4px 15px rgba(91, 143, 168, 0.2);
-	outline: none;
-	background: rgba(255, 255, 255, 1);
-}
-
-/* Winter card hover effects */
+/* Card hover effects */
 .news_home-page {
 	transition: all 0.3s ease;
 }
