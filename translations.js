@@ -9,7 +9,7 @@ const translations = {
 		// Navigation
 		navServices: "Наши услуги",
 		navDonation: "Донорство",
-		navSurrogate: "Суррагатные мамы",
+		navSurrogate: "Суррогатные мамы",
 		navBlog: "Блог",
 		navContacts: "Контакты",
 		

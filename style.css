@@ -72,9 +72,41 @@ section {
 
 /* Header Styles */
 .site-header {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.95);
+	background-image: 
+		/* Winter decorative pattern - snowflakes */
+		radial-gradient(circle at 10% 20%, rgba(107, 76, 138, 0.08) 2px, transparent 2px),
+		radial-gradient(circle at 90% 30%, rgba(107, 76, 138, 0.08) 2px, transparent 2px),
+		radial-gradient(circle at 50% 50%, rgba(107, 76, 138, 0.06) 1.5px, transparent 1.5px),
+		radial-gradient(circle at 30% 70%, rgba(107, 76, 138, 0.08) 2px, transparent 2px),
+		radial-gradient(circle at 70% 80%, rgba(107, 76, 138, 0.08) 2px, transparent 2px),
+		/* Decorative corner elements */
+		radial-gradient(ellipse 150px 200px at 0% 0%, rgba(107, 76, 138, 0.1) 0%, transparent 60%),
+		radial-gradient(ellipse 150px 200px at 100% 0%, rgba(107, 76, 138, 0.1) 0%, transparent 60%),
+		/* Soft gradient overlay */
+		linear-gradient(135deg, rgba(245, 240, 250, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+	background-size: 
+		80px 80px,
+		100px 100px,
+		120px 120px,
+		90px 90px,
+		110px 110px,
+		300px 400px,
+		300px 400px,
+		100% 100%;
+	background-position:
+		0 0,
+		0 0,
+		0 0,
+		0 0,
+		0 0,
+		top left,
+		top right,
+		0 0;
+	background-repeat: repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat;
+	backdrop-filter: blur(5px);
 	padding: 5px 0;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 10px rgba(107, 76, 138, 0.15);
 	position: sticky;
 	top: 0;
 	z-index: 1000;
