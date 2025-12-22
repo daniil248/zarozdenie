@@ -7,7 +7,7 @@
 
 body {
 	font-family: "Nunito", sans-serif;
-	color: #0D0664;
+	color: #402A54;
 	line-height: 1.6;
 	background-color: #fff;
 }
@@ -40,6 +40,19 @@ body {
 .logo a {
 	text-decoration: none;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 15px;
+}
+
+.logo-image {
+	height: 50px;
+	width: auto;
+	display: block;
+}
+
+.logo-text-wrapper {
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
@@ -47,7 +60,7 @@ body {
 .logo-text {
 	font-size: 28px;
 	font-weight: 700;
-	color: #0D0664;
+	color: #402A54;
 	letter-spacing: 2px;
 	margin-bottom: 5px;
 	font-family: "Nunito", sans-serif;
@@ -56,7 +69,7 @@ body {
 .logo-subtitle {
 	font-size: 12px;
 	font-weight: 400;
-	color: #0D0664;
+	color: #402A54;
 	letter-spacing: 1px;
 }
 
@@ -76,41 +89,57 @@ body {
 
 #navbar_header a {
 	text-decoration: none;
-	color: #0D0664;
+	color: #402A54;
 	font-size: 16px;
 	font-weight: 400;
 	transition: color 0.3s;
 }
 
 #navbar_header a:hover {
-	color: #4435FF;
+	color: #6B4C8A;
 }
 
 /* Language Switcher */
 .lang-switcher {
 	display: flex;
-	gap: 5px;
+	gap: 0;
 	margin-left: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #402A54;
 }
 
 .lang-btn {
 	padding: 5px 12px;
-	border-radius: 5px;
 	font-size: 14px;
 	font-weight: 600;
-	transition: all 0.3s;
-	background-color: transparent;
-	border: 1px solid #0D0664;
-	color: #0D0664;
+	transition: all 0.2s ease;
+	background-color: #fff;
+	border: none;
+	border-right: 1px solid #402A54;
+	color: #402A54;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.lang-btn:last-child {
+	border-right: none;
 }
 
 .lang-btn:hover {
-	background-color: #0D0664;
-	color: #fff;
+	background-color: #F5F0FA;
+	color: #402A54;
 }
 
 .lang-btn.active {
-	background-color: #0D0664;
+	background-color: #402A54;
+	color: #fff;
+	pointer-events: none;
+}
+
+.lang-btn.active:hover {
+	background-color: #402A54;
 	color: #fff;
 }
 
@@ -123,14 +152,14 @@ body {
 .mobile-menu-toggle span {
 	width: 25px;
 	height: 3px;
-	background-color: #0D0664;
+	background-color: #402A54;
 	margin: 3px 0;
 	transition: 0.3s;
 }
 
 /* Hero Section */
 .hero-section {
-	background: linear-gradient(135deg, #E8E7FF 0%, #fff 100%);
+	background: linear-gradient(135deg, #F5F0FA 0%, #fff 100%);
 	padding: 80px 0;
 }
 
@@ -152,7 +181,7 @@ body {
 	font-size: 42px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 20px;
 }
 
@@ -160,7 +189,7 @@ body {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 30px;
 }
 
@@ -181,21 +210,21 @@ body {
 }
 
 .btn-primary {
-	background-color: #4435FF;
+	background-color: #402A54;
 	color: #FFFFFF;
 }
 
 .btn-primary:hover {
-	background-color: #3E31E1;
+	background-color: #5A3F6E;
 }
 
 .btn-secondary {
-	background-color: #E8E7FF;
-	color: #4435FF;
+	background-color: #F5F0FA;
+	color: #402A54;
 }
 
 .btn-secondary:hover {
-	background-color: #D2CFEF;
+	background-color: #E8DDF0;
 }
 
 .hero-image {
@@ -207,62 +236,19 @@ body {
 }
 
 .hero-logo {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: auto;
 	position: relative;
-}
-
-.logo-circle {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	border: 3px solid #0D0664;
-	position: relative;
-	background: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.logo-circle::before,
-.logo-circle::after {
-	content: '';
-	position: absolute;
-	width: 50%;
-	height: 50%;
-	border: 2.5px solid #0D0664;
-	border-radius: 50% 50% 50% 0;
-	background: transparent;
-}
-
-.logo-circle::before {
-	top: 8%;
-	left: 12%;
-	transform: rotate(-30deg);
-	border-right: none;
-	border-bottom: none;
-}
-
-.logo-circle::after {
-	bottom: 8%;
-	right: 12%;
-	transform: rotate(150deg);
-	border-left: none;
-	border-top: none;
-}
-
-/* Embryo shape in center */
-.hero-logo::after {
-	content: '';
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #0D0664;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0.4;
+.hero-logo-image {
+	width: 100%;
+	height: auto;
+	max-width: 250px;
+	display: block;
 }
 
 /* Section Styles */
@@ -274,7 +260,7 @@ section {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #0D0664;
+	color: #402A54;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -283,7 +269,7 @@ section {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
@@ -308,7 +294,7 @@ section {
 }
 
 .border_bottom_block {
-	border-bottom: 1px solid #E0DDFF !important;
+	border-bottom: 1px solid #E8DDF0 !important;
 	margin-right: 20px;
 	padding-bottom: 30px;
 }
@@ -319,7 +305,7 @@ section {
 
 .service-icon {
 	font-size: 48px;
-	color: #4435FF;
+	color: #6B4C8A;
 	margin-bottom: 20px;
 }
 
@@ -327,7 +313,7 @@ section {
 	font-size: 26px;
 	font-weight: 700;
 	line-height: 39px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 15px;
 }
 
@@ -335,7 +321,7 @@ section {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 20px;
 }
 
@@ -348,7 +334,7 @@ section {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 10px;
 	padding-left: 20px;
 	position: relative;
@@ -356,7 +342,7 @@ section {
 
 .service-features li:before {
 	content: "•";
-	color: #4435FF;
+	color: #6B4C8A;
 	font-size: 20px;
 	position: absolute;
 	left: 0;
@@ -376,7 +362,7 @@ section {
 
 /* Health Section */
 .health-section {
-	background-color: #F8F7FF;
+	background-color: #F5F0FA;
 }
 
 /* Blog Section */
@@ -426,7 +412,7 @@ section {
 	font-weight: 400;
 	line-height: 39px;
 	letter-spacing: 0em;
-	color: #0D0664;
+	color: #402A54;
 }
 
 .news_home-page .excerpt-news-block {
@@ -442,7 +428,7 @@ section {
 	font-weight: 400;
 	line-height: 27px;
 	letter-spacing: 0em;
-	color: #4435FF;
+	color: #6B4C8A;
 	text-decoration: none;
 }
 
@@ -463,7 +449,7 @@ section {
 
 /* Contact Form Section */
 .contact-section {
-	background-color: #F8F7FF;
+	background-color: #F5F0FA;
 }
 
 .contact-form-wrapper {
@@ -481,7 +467,7 @@ section {
 	line-height: 39px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 20px;
 	width: 100%;
 }
@@ -495,7 +481,7 @@ section {
 	width: 100%;
 	margin-bottom: 20px;
 	font-family: "Nunito", sans-serif !important;
-	border: 1px solid #D2CFEF !important;
+	border: 1px solid #E8DDF0 !important;
 	border-radius: 10px;
 	padding: 16px 20px;
 	font-size: 18px;
@@ -508,7 +494,7 @@ section {
 	line-height: 27px !important;
 	letter-spacing: 0em !important;
 	text-align: left !important;
-	color: #0D0664 !important;
+	color: #402A54 !important;
 }
 
 .contact-form_home ::-moz-placeholder {
@@ -518,7 +504,7 @@ section {
 	line-height: 27px !important;
 	letter-spacing: 0em !important;
 	text-align: left !important;
-	color: #0D0664 !important;
+	color: #402A54 !important;
 }
 
 .contact-form_home :-ms-input-placeholder {
@@ -528,7 +514,7 @@ section {
 	line-height: 27px !important;
 	letter-spacing: 0em !important;
 	text-align: left !important;
-	color: #0D0664 !important;
+	color: #402A54 !important;
 }
 
 .btn_block-form-home {
@@ -555,7 +541,7 @@ section {
 }
 
 .btn_block-form-home input {
-	background-color: #4435FF;
+	background-color: #402A54;
 	color: #FFFFFF;
 	border: none;
 	border-radius: 10px;
@@ -567,11 +553,11 @@ section {
 }
 
 .btn_block-form-home input:hover {
-	background-color: #3E31E1;
+	background-color: #5A3F6E;
 }
 
 .btn_block-form-home button {
-	background-color: #E8E7FF;
+	background-color: #F5F0FA;
 	border: none;
 	padding: 15px;
 	border-radius: 10px;
@@ -586,12 +572,12 @@ section {
 .favorite i {
 	font-size: 25px;
 	vertical-align: middle;
-	color: #4435FF;
+	color: #6B4C8A;
 	font-weight: 600;
 }
 
 .favorite:hover {
-	background-color: #3E31E1 !important;
+	background-color: #5A3F6E !important;
 }
 
 .favorite:hover i {
@@ -611,7 +597,7 @@ section {
 }
 
 .home_form_text_footer a {
-	color: #4435FF;
+	color: #6B4C8A;
 	text-decoration: none;
 }
 
@@ -621,7 +607,7 @@ section {
 
 /* Footer */
 .site-footer {
-	background-color: #0D0664;
+	background-color: #402A54;
 	color: #fff;
 	padding: 60px 0 30px;
 }
@@ -656,7 +642,7 @@ section {
 }
 
 #footer_block a:hover {
-	color: #E8E7FF;
+	color: #F5F0FA;
 }
 
 .contact-info {
@@ -680,11 +666,11 @@ section {
 }
 
 .contact-info a:hover {
-	color: #E8E7FF;
+	color: #F5F0FA;
 }
 
 .contact-name {
-	color: #E8E7FF;
+	color: #F5F0FA;
 	font-size: 14px;
 	font-weight: 400;
 	margin-top: 5px;
@@ -702,7 +688,7 @@ section {
 }
 
 .social-icons a:hover {
-	color: #E8E7FF;
+	color: #F5F0FA;
 }
 
 .footer-bottom {
@@ -727,7 +713,7 @@ section {
 }
 
 #copyright_footer a:hover {
-	color: #E8E7FF !important;
+	color: #F5F0FA !important;
 }
 
 /* WhatsApp Button */
@@ -872,6 +858,15 @@ section {
 		margin-top: 10px;
 	}
 	
+	.logo a {
+		flex-direction: row;
+		gap: 10px;
+	}
+	
+	.logo-image {
+		height: 40px;
+	}
+	
 	.logo-text {
 		font-size: 22px;
 	}
@@ -984,7 +979,7 @@ section {
 
 .number_block li {
 	padding-bottom: 20px;
-	border-bottom: 1px solid #E0DDFF;
+	border-bottom: 1px solid #E8DDF0;
 	counter-increment: item;
 }
 
@@ -1001,7 +996,7 @@ section {
 	font-weight: 400;
 	line-height: 39px;
 	letter-spacing: 0em;
-	color: #4435FF;
+	color: #6B4C8A;
 	vertical-align: bottom !important;
 	content: counter(item, decimal-leading-zero) "  ";
 }
@@ -1012,12 +1007,12 @@ section {
 
 /* Join chat */
 .joinchat--chatbox .joinchat__button:active, .joinchat--chatbox .joinchat__button:hover {
-	background: #3E31E1 !important;
+	background: #5A3F6E !important;
 }
 
 /* Donation Section */
 .donation-section {
-	background-color: #F8F7FF;
+	background-color: #F5F0FA;
 	padding: 60px 0;
 }
 
@@ -1030,7 +1025,7 @@ section {
 .donation-text {
 	font-size: 18px;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 40px;
 }
 
@@ -1047,11 +1042,11 @@ section {
 	align-items: center;
 	gap: 10px;
 	font-size: 16px;
-	color: #0D0664;
+	color: #402A54;
 }
 
 .donation-feature i {
-	color: #4435FF;
+	color: #6B4C8A;
 	font-size: 20px;
 }
 
@@ -1069,7 +1064,7 @@ section {
 .surrogate-text {
 	font-size: 18px;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -1084,7 +1079,7 @@ section {
 .step {
 	text-align: center;
 	padding: 30px 20px;
-	background-color: #F8F7FF;
+	background-color: #F5F0FA;
 	border-radius: 10px;
 	transition: transform 0.3s;
 }
@@ -1097,7 +1092,7 @@ section {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background-color: #4435FF;
+	background-color: #6B4C8A;
 	color: #fff;
 	display: flex;
 	align-items: center;
@@ -1110,7 +1105,7 @@ section {
 .step h3 {
 	font-size: 20px;
 	font-weight: 700;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 10px;
 }
 
@@ -1122,7 +1117,7 @@ section {
 
 /* Contacts Section */
 .contacts-section {
-	background-color: #F8F7FF;
+	background-color: #F5F0FA;
 	padding: 60px 0;
 }
 
@@ -1148,28 +1143,28 @@ section {
 
 .contact-card i {
 	font-size: 40px;
-	color: #4435FF;
+	color: #6B4C8A;
 	margin-bottom: 20px;
 }
 
 .contact-card h3 {
 	font-size: 20px;
 	font-weight: 700;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 15px;
 }
 
 .contact-card a {
 	display: block;
 	font-size: 18px;
-	color: #0D0664;
+	color: #402A54;
 	text-decoration: none;
 	margin-bottom: 10px;
 	transition: color 0.3s;
 }
 
 .contact-card a:hover {
-	color: #4435FF;
+	color: #6B4C8A;
 }
 
 .whatsapp-link {
@@ -1210,7 +1205,7 @@ section {
 }
 
 .blog-modal-close {
-	color: #0D0664;
+	color: #402A54;
 	float: right;
 	font-size: 32px;
 	font-weight: bold;
@@ -1222,7 +1217,7 @@ section {
 }
 
 .blog-modal-close:hover {
-	color: #4435FF;
+	color: #6B4C8A;
 }
 
 #blog-modal-body {
@@ -1231,20 +1226,20 @@ section {
 
 #blog-modal-body h2 {
 	font-size: 28px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 20px;
 }
 
 #blog-modal-body p {
 	font-size: 16px;
 	line-height: 27px;
-	color: #0D0664;
+	color: #402A54;
 	margin-bottom: 15px;
 }
 
 /* Privacy and Terms Links */
 .privacy-link, .footer-link {
-	color: #4435FF;
+	color: #6B4C8A;
 	text-decoration: none;
 	transition: text-decoration 0.3s;
 }
