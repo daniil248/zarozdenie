@@ -45,7 +45,7 @@ body {
 }
 
 .logo-image {
-	height: 42px;
+	height: 60px;
 	width: auto;
 	display: block;
 }
@@ -84,10 +84,11 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	border: 1px solid #402A54;
+	background-color: #fff;
 }
 
 .lang-btn {
-	padding: 5px 12px;
+	padding: 6px 14px;
 	font-size: 14px;
 	font-weight: 600;
 	transition: all 0.2s ease;
@@ -98,6 +99,7 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	display: inline-block;
+	position: relative;
 }
 
 .lang-btn:last-child {
@@ -113,8 +115,9 @@ body {
 	background-color: #402A54;
 	color: #fff;
 	pointer-events: none;
-	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .lang-btn.active:hover {
@@ -712,10 +715,16 @@ section {
 	background-color: #25d366;
 	border-radius: 50%;
 	color: #fff;
-	font-size: 30px;
+	font-size: 32px;
 	text-decoration: none;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 	transition: all 0.3s;
+	position: relative;
+}
+
+.whatsapp-button a i {
+	font-size: 32px;
+	line-height: 1;
 }
 
 .whatsapp-button a:hover {
@@ -843,7 +852,7 @@ section {
 	}
 	
 	.logo-image {
-		height: 35px;
+		height: 45px;
 	}
 	
 	.hero-logo {

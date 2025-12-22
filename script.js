@@ -132,8 +132,12 @@ const blogArticles = {
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
 	// Translate page on load
-	if (typeof translations !== 'undefined') {
-		translatePage(currentLang);
+	if (typeof translations !== 'undefined' && translations[currentLang]) {
+		try {
+			translatePage(currentLang);
+		} catch (error) {
+			console.error('Translation error:', error);
+		}
 	}
 	
 	const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
