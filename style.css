@@ -45,7 +45,7 @@ body {
 }
 
 .logo-image {
-	height: 55px;
+	height: 75px;
 	width: auto;
 	display: block;
 }
@@ -713,25 +713,25 @@ section {
 	justify-content: center;
 	width: 60px;
 	height: 60px;
-	background-color: #25d366;
-	border-radius: 50%;
+	background-color: transparent;
+	border-radius: 0;
 	color: #fff;
 	text-decoration: none;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 	transition: all 0.3s;
 	position: relative;
+	padding: 0;
 }
 
-.whatsapp-button a i {
-	font-size: 32px !important;
-	line-height: 1 !important;
-	display: block !important;
-	font-style: normal;
-	font-weight: normal;
+.whatsapp-icon {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+	display: block;
+	transition: transform 0.3s;
 }
 
-.whatsapp-button a:hover {
-	background-color: #20ba5a;
+.whatsapp-button a:hover .whatsapp-icon {
 	transform: scale(1.1);
 }
 
@@ -855,7 +855,7 @@ section {
 	}
 	
 	.logo-image {
-		height: 45px;
+		height: 50px;
 	}
 	
 	.hero-logo {
