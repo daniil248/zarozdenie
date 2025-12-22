@@ -42,35 +42,12 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 15px;
 }
 
 .logo-image {
-	height: 50px;
+	height: 42px;
 	width: auto;
 	display: block;
-}
-
-.logo-text-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.logo-text {
-	font-size: 28px;
-	font-weight: 700;
-	color: #402A54;
-	letter-spacing: 2px;
-	margin-bottom: 5px;
-	font-family: "Nunito", sans-serif;
-}
-
-.logo-subtitle {
-	font-size: 12px;
-	font-weight: 400;
-	color: #402A54;
-	letter-spacing: 1px;
 }
 
 .main-nav ul {
@@ -136,6 +113,8 @@ body {
 	background-color: #402A54;
 	color: #fff;
 	pointer-events: none;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+	font-weight: 700;
 }
 
 .lang-btn.active:hover {
@@ -864,15 +843,7 @@ section {
 	}
 	
 	.logo-image {
-		height: 40px;
-	}
-	
-	.logo-text {
-		font-size: 22px;
-	}
-	
-	.logo-subtitle {
-		font-size: 10px;
+		height: 35px;
 	}
 	
 	.hero-logo {

@@ -33,7 +33,7 @@ const translations = {
 		service2Feature1: "В нашей картотеки самый большой ассортимент доноров (более чем 300 человек). Представлены такие национальности как: казашки, русские, украинки, уйгурки, азербайджанки, турчанки, осетинки, ингушки, кореянки, китаянки, немки, болгарки, еврейки и другие.",
 		service2Feature2: "В услугу подбора донора ооцитов входит его полный патронаж до пункции ооцитов. Наши кураторы самостоятельно делают все уколы, контролируют приём препаратов и медикаментов для самых лучших результатов стимуляции.",
 		service2Feature3: "Наши доноры утверждаются у физиогномиста и психолога для более точной корреляции с запросом клиента.",
-		service2Note: "Мы сотрудничаем с российскими, американскими и грузинскими криобанками. Если в нашей картотеки вы не найдёте подходящего под ваши критерии донора, мы можем организовать заказ Био материала из других стран.",
+		service2Note: "Мы сотрудничаем с европейскими, американскими и грузинскими криобанками. Если в нашей картотеки вы не найдёте подходящего под ваши критерии донора, мы можем организовать заказ Био материала из других стран.",
 		
 		service3Title: "Патронаж",
 		service3Desc: "Патронаж и контроль беременности вашей суррогатной мамы без рисков срыва программы.",
@@ -130,7 +130,7 @@ const translations = {
 		service2Feature1: "Our database has the largest selection of donors (more than 300 people). Nationalities include: Kazakhs, Russians, Ukrainians, Uyghurs, Azerbaijanis, Turks, Ossetians, Ingush, Koreans, Chinese, Germans, Bulgarians, Jews and others.",
 		service2Feature2: "The egg donor selection service includes full patronage until oocyte retrieval. Our coordinators independently administer all injections, control the intake of medications for the best stimulation results.",
 		service2Feature3: "Our donors are approved by a physiognomist and psychologist for more accurate correlation with the client's request.",
-		service2Note: "We cooperate with Russian, American and Georgian cryobanks. If you don't find a suitable donor in our database, we can organize ordering biological material from other countries.",
+		service2Note: "We cooperate with European, American and Georgian cryobanks. If you don't find a suitable donor in our database, we can organize ordering biological material from other countries.",
 		
 		service3Title: "Patronage",
 		service3Desc: "Patronage and pregnancy monitoring of your surrogate mother without program failure risks.",
@@ -227,7 +227,7 @@ const translations = {
 		service2Feature1: "我们的数据库拥有最大的捐赠者选择（超过300人）。国籍包括：哈萨克人、俄罗斯人、乌克兰人、维吾尔人、阿塞拜疆人、土耳其人、奥塞梯人、印古什人、韩国人、中国人、德国人、保加利亚人、犹太人等。",
 		service2Feature2: "卵子捐赠者选择服务包括取卵前的全面监护。我们的协调员独立进行所有注射，控制药物摄入以获得最佳刺激效果。",
 		service2Feature3: "我们的捐赠者由面相学家和心理学家批准，以更准确地满足客户要求。",
-		service2Note: "我们与俄罗斯、美国和格鲁吉亚的冷冻库合作。如果您在我们的数据库中没有找到合适的捐赠者，我们可以组织从其他国家订购生物材料。",
+		service2Note: "我们与欧洲、美国和格鲁吉亚的冷冻库合作。如果您在我们的数据库中没有找到合适的捐赠者，我们可以组织从其他国家订购生物材料。",
 		
 		service3Title: "监护",
 		service3Desc: "对您的代孕妈妈进行监护和妊娠监测，无项目失败风险。",
