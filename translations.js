@@ -48,7 +48,7 @@ const translations = {
 		service3Feature5: "Ежемесячные выплаты на улучшения питания (по согласованию с заказчиками), доставка продуктовой корзины, оплата препаратов и дополнительного обследования.",
 		service3Feature6: "В 36 недель беременности заключаем договор на платные партнёрские роды с акушер-гинекологом в одном из ведущих роддомов Алматы. При желании Заказчики присутствуют на родах наших сурмам.",
 		
-		service4Title: "Международный патронаж + пансионат",
+		service4Title: "Патронаж + пансионат",
 		service4Desc: "Международная сеть пансионатов для суррогатных мам",
 		service4Feature1: "Мы гордимся тем, что работаем в разных странах мира! Наши пансионаты расположены в Европе, на Кипре, в Грузии и других странах, что позволяет нам предоставлять услуги высочайшего качества независимо от географического расположения.",
 		service4Feature2: "Международное присутствие — это не просто удобство, это огромное преимущество! Мы можем предложить вам лучшие условия, современное медицинское оборудование и комфортабельные апартаменты в странах с развитой медицинской инфраструктурой.",
@@ -195,7 +195,7 @@ const translations = {
 		service3Feature5: "Monthly payments for nutrition improvement (by agreement with clients), grocery basket delivery, medication and additional examination payment.",
 		service3Feature6: "At 36 weeks of pregnancy, we conclude a contract for paid partner childbirth with an obstetrician-gynecologist in one of the leading maternity hospitals in Almaty. If desired, Clients are present at the birth of our surrogate mothers.",
 		
-		service4Title: "International Patronage + Boarding House",
+		service4Title: "Patronage + Boarding House",
 		service4Desc: "International network of boarding houses for surrogate mothers",
 		service4Feature1: "We are proud to work in different countries around the world! Our boarding houses are located in Europe, Cyprus, Georgia and other countries, which allows us to provide the highest quality services regardless of geographical location.",
 		service4Feature2: "International presence is not just a convenience, it's a huge advantage! We can offer you the best conditions, modern medical equipment and comfortable apartments in countries with developed medical infrastructure.",
@@ -342,7 +342,7 @@ const translations = {
 		service3Feature5: "每月支付营养改善费用（与客户协商），提供食品篮，支付药物和额外检查费用。",
 		service3Feature6: "在妊娠36周时，我们在阿拉木图领先的妇产医院之一与产科医生签订付费伴侣分娩合同。如果客户愿意，可以在我们代孕妈妈的分娩时在场。",
 		
-		service4Title: "国际监护 + 寄宿公寓",
+		service4Title: "监护 + 寄宿公寓",
 		service4Desc: "代孕妈妈国际寄宿公寓网络",
 		service4Feature1: "我们为在世界不同国家工作而感到自豪！我们的寄宿公寓位于欧洲、塞浦路斯、格鲁吉亚和其他国家，这使我们能够提供最高质量的服务，无论地理位置如何。",
 		service4Feature2: "国际存在不仅仅是便利，这是一个巨大的优势！我们可以为您提供最佳条件、现代医疗设备和在医疗基础设施发达国家的舒适公寓。",

@@ -511,70 +511,57 @@ section {
 
 /* Blog Section */
 .blog-section {
-	background: 
-		/* New Year gradient with corporate colors */
-		linear-gradient(135deg, rgba(245, 240, 250, 0.95) 0%, rgba(232, 221, 240, 0.95) 50%, rgba(255, 255, 255, 0.95) 100%),
-		/* Snowflakes pattern */
-		radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 90% 30%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 20% 70%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-		/* Decorative purple snowflakes */
-		radial-gradient(circle at 15% 50%, rgba(123, 63, 163, 0.15) 2px, transparent 2px),
-		radial-gradient(circle at 85% 50%, rgba(123, 63, 163, 0.15) 2px, transparent 2px),
-		radial-gradient(circle at 50% 15%, rgba(123, 63, 163, 0.15) 2px, transparent 2px),
-		radial-gradient(circle at 50% 85%, rgba(123, 63, 163, 0.15) 2px, transparent 2px);
-	background-size: 
-		100% 100%,
-		150px 150px,
-		180px 180px,
-		200px 200px,
-		160px 160px,
-		170px 170px,
-		190px 190px,
-		250px 250px,
-		280px 280px,
-		300px 300px,
-		270px 270px;
-	background-position:
-		0 0,
-		0 0,
-		50px 50px,
-		100px 100px,
-		150px 150px,
-		200px 200px,
-		250px 250px,
-		0 0,
-		100% 0,
-		50% 0,
-		50% 100%;
-	background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat;
+	background-image: 
+		/* Overlay with corporate colors */
+		linear-gradient(135deg, rgba(123, 63, 163, 0.15) 0%, rgba(157, 95, 207, 0.1) 50%, rgba(245, 240, 250, 0.2) 100%),
+		/* Main winter background image */
+		url('images/istockphoto-1428401936-612x612.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	padding: 80px 0;
 	position: relative;
 	width: 100%;
+	overflow: hidden;
 }
 
 .blog-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(135deg, rgba(245, 240, 250, 0.3) 0%, rgba(232, 221, 240, 0.25) 50%, rgba(255, 255, 255, 0.3) 100%);
+	z-index: 0;
+	pointer-events: none;
+}
+
+.blog-section > * {
+	position: relative;
+	z-index: 1;
+}
+
+.blog-section::after {
 	content: '⛄';
 	position: absolute;
-	bottom: 20px;
-	right: 50px;
-	font-size: 60px;
-	opacity: 0.3;
-	z-index: 1;
+	bottom: 30px;
+	right: 80px;
+	font-size: 80px;
+	opacity: 0.4;
+	z-index: 2;
 	pointer-events: none;
-	animation: float 3s ease-in-out infinite;
+	animation: float 4s ease-in-out infinite;
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 @keyframes float {
 	0%, 100% {
-		transform: translateY(0px);
+		transform: translateY(0px) rotate(0deg);
 	}
 	50% {
-		transform: translateY(-10px);
+		transform: translateY(-15px) rotate(5deg);
 	}
 }
 
