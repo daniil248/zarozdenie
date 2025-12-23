@@ -411,27 +411,44 @@ section {
 
 /* Winter decoration around service cards */
 .service-card::after {
-	content: '';
+	content: '❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄ ❄';
 	position: absolute;
-	top: -5px;
-	left: -5px;
-	right: -5px;
-	bottom: -5px;
-	background-image: 
-		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px);
-	background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
-	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 50% 0, 50% 100%, 0 50%, 100% 50%;
-	background-repeat: no-repeat;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
 	pointer-events: none;
 	z-index: 2;
-	opacity: 0.7;
+	opacity: 0.8;
+	line-height: 1;
+	overflow: hidden;
+	white-space: nowrap;
+	background-image: 
+		/* Snowflakes at corners */
+		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		/* Snowflakes along edges */
+		radial-gradient(circle at 25% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 25% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		/* Additional snowflakes */
+		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px);
+	background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 35px 35px, 35px 35px, 35px 35px, 35px 35px;
+	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 25% 0, 75% 0, 25% 100%, 75% 100%, 0 25%, 0 75%, 100% 25%, 100% 75%, 50% 0, 50% 100%, 0 50%, 100% 50%;
+	background-repeat: no-repeat;
 }
 
 .border_bottom_block {
@@ -511,11 +528,13 @@ section {
 
 /* Blog Section */
 .blog-section {
-	background-image: url('images/istockphoto-1428401936-612x612.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-image: 
+		linear-gradient(135deg, rgba(123, 63, 163, 0.15) 0%, rgba(157, 95, 207, 0.12) 50%, rgba(245, 240, 250, 0.18) 100%),
+		url('./images/istockphoto-1428401936-612x612.jpg');
+	background-size: cover, cover;
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: fixed, fixed;
 	padding: 80px 0;
 	position: relative;
 	width: 100%;
@@ -530,7 +549,7 @@ section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(135deg, rgba(123, 63, 163, 0.1) 0%, rgba(157, 95, 207, 0.08) 50%, rgba(245, 240, 250, 0.12) 100%);
+	background: linear-gradient(135deg, rgba(245, 240, 250, 0.15) 0%, rgba(232, 221, 240, 0.12) 50%, rgba(255, 255, 255, 0.15) 100%);
 	z-index: 0;
 	pointer-events: none;
 }
@@ -1406,25 +1425,36 @@ section {
 .benefit-item::after {
 	content: '';
 	position: absolute;
-	top: -5px;
-	left: -5px;
-	right: -5px;
-	bottom: -5px;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
 	background-image: 
-		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px);
-	background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
-	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 50% 0, 50% 100%, 0 50%, 100% 50%;
+		/* Snowflakes at corners */
+		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		/* Snowflakes along edges */
+		radial-gradient(circle at 25% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 25% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		/* Additional snowflakes */
+		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px);
+	background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 35px 35px, 35px 35px, 35px 35px, 35px 35px;
+	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 25% 0, 75% 0, 25% 100%, 75% 100%, 0 25%, 0 75%, 100% 25%, 100% 75%, 50% 0, 50% 100%, 0 50%, 100% 50%;
 	background-repeat: no-repeat;
 	pointer-events: none;
 	z-index: 2;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 .benefit-item i {
@@ -1498,25 +1528,36 @@ section {
 .step::after {
 	content: '';
 	position: absolute;
-	top: -5px;
-	left: -5px;
-	right: -5px;
-	bottom: -5px;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
 	background-image: 
-		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
-		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px),
-		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.6) 1.5px, transparent 1.5px);
-	background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
-	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 50% 0, 50% 100%, 0 50%, 100% 50%;
+		/* Snowflakes at corners */
+		radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 1) 3px, transparent 3px),
+		/* Snowflakes along edges */
+		radial-gradient(circle at 25% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 0%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 25% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 75% 100%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 0% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 25%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		radial-gradient(circle at 100% 75%, rgba(255, 255, 255, 0.9) 2.5px, transparent 2.5px),
+		/* Additional snowflakes */
+		radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 0% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px),
+		radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.8) 2px, transparent 2px);
+	background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 30px 30px, 35px 35px, 35px 35px, 35px 35px, 35px 35px;
+	background-position: 0 0, 100% 0, 0 100%, 100% 100%, 25% 0, 75% 0, 25% 100%, 75% 100%, 0 25%, 0 75%, 100% 25%, 100% 75%, 50% 0, 50% 100%, 0 50%, 100% 50%;
 	background-repeat: no-repeat;
 	pointer-events: none;
 	z-index: 2;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 .step-number {
