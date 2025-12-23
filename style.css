@@ -511,11 +511,7 @@ section {
 
 /* Blog Section */
 .blog-section {
-	background-image: 
-		/* Overlay with corporate colors */
-		linear-gradient(135deg, rgba(123, 63, 163, 0.15) 0%, rgba(157, 95, 207, 0.1) 50%, rgba(245, 240, 250, 0.2) 100%),
-		/* Main winter background image */
-		url('images/istockphoto-1428401936-612x612.jpg');
+	background-image: url('images/istockphoto-1428401936-612x612.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -524,6 +520,7 @@ section {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	min-height: 600px;
 }
 
 .blog-section::before {
@@ -533,7 +530,7 @@ section {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(135deg, rgba(245, 240, 250, 0.3) 0%, rgba(232, 221, 240, 0.25) 50%, rgba(255, 255, 255, 0.3) 100%);
+	background: linear-gradient(135deg, rgba(123, 63, 163, 0.1) 0%, rgba(157, 95, 207, 0.08) 50%, rgba(245, 240, 250, 0.12) 100%);
 	z-index: 0;
 	pointer-events: none;
 }
@@ -541,28 +538,6 @@ section {
 .blog-section > * {
 	position: relative;
 	z-index: 1;
-}
-
-.blog-section::after {
-	content: '⛄';
-	position: absolute;
-	bottom: 30px;
-	right: 80px;
-	font-size: 80px;
-	opacity: 0.4;
-	z-index: 2;
-	pointer-events: none;
-	animation: float 4s ease-in-out infinite;
-	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-@keyframes float {
-	0%, 100% {
-		transform: translateY(0px) rotate(0deg);
-	}
-	50% {
-		transform: translateY(-15px) rotate(5deg);
-	}
 }
 
 .blog__inner {
