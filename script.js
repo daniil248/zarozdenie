@@ -355,4 +355,34 @@ document.addEventListener('DOMContentLoaded', function() {
 			bgImage.src = bgUrl;
 		}
 	});
+	
+	// Load background images for benefit items
+	const benefitItems = document.querySelectorAll('.benefit-item[data-benefit-bg]');
+	benefitItems.forEach(item => {
+		const bgUrl = item.getAttribute('data-benefit-bg');
+		if (bgUrl) {
+			item.style.setProperty('--benefit-bg-image', `url(${bgUrl})`);
+			const bgImage = new Image();
+			bgImage.onload = function() {};
+			bgImage.onerror = function() {
+				item.style.setProperty('--benefit-bg-image', 'linear-gradient(135deg, rgba(107, 76, 138, 0.1) 0%, rgba(64, 42, 84, 0.1) 100%)');
+			};
+			bgImage.src = bgUrl;
+		}
+	});
+	
+	// Load background images for steps
+	const steps = document.querySelectorAll('.step[data-step-bg]');
+	steps.forEach(step => {
+		const bgUrl = step.getAttribute('data-step-bg');
+		if (bgUrl) {
+			step.style.setProperty('--step-bg-image', `url(${bgUrl})`);
+			const bgImage = new Image();
+			bgImage.onload = function() {};
+			bgImage.onerror = function() {
+				step.style.setProperty('--step-bg-image', 'linear-gradient(135deg, rgba(107, 76, 138, 0.1) 0%, rgba(64, 42, 84, 0.1) 100%)');
+			};
+			bgImage.src = bgUrl;
+		}
+	});
 });
