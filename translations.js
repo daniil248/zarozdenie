@@ -18,6 +18,10 @@ const translations = {
 		heroSubtitle: "У нас лучшее соотношение цены и качества! Мы предоставляем услуги в рамках ограниченного бюджета и цена договора, с момента его подписания, остается неизменной!",
 		btnContact: "Связаться с нами",
 		btnServices: "Наши услуги",
+		heroFeature1: "Более 10 лет опыта",
+		heroFeature2: "Более 300 проверенных доноров",
+		heroFeature3: "Полное юридическое сопровождение",
+		heroFeature4: "Индивидуальный подход",
 		
 		// Services
 		servicesTitle: "Предоставляем полный комплекс услуг",
@@ -59,6 +63,12 @@ const translations = {
 		blogTitle: "Блог",
 		blogReadMore: "читать дальше",
 		blogViewAll: "Смотреть все в Instagram",
+		blog1Title: "Решаем проблему «Бесплодия» с помощью ЭКО",
+		blog1Excerpt: "Современные методы экстракорпорального оплодотворения позволяют многим парам обрести счастье родительства. Мы используем передовые технологии и индивидуальный подход к каждой паре.",
+		blog2Title: "Донорство / суррогатное материнство",
+		blog2Excerpt: "Профессиональная поддержка на всех этапах программы донорства и суррогатного материнства. Полное юридическое и медицинское сопровождение.",
+		blog3Title: "ЗАРОЖДЕНИЕ — ваш надежный партнер",
+		blog3Excerpt: "Мы помогаем парам обрести счастье родительства с помощью современных репродуктивных технологий. Более 10 лет опыта в области репродуктивной медицины.",
 		
 		// Contact Form
 		contactTitle: "Хорошие люди должны размножаться :)",
@@ -83,10 +93,24 @@ const translations = {
 		donationFeature1: "Полное медицинское обследование",
 		donationFeature2: "Психологическое тестирование",
 		donationFeature3: "Юридическое сопровождение",
+		donationFeature4: "Физиогномистический анализ",
+		donationFeature5: "Генетическое тестирование",
+		donationFeature6: "Контроль стимуляции",
+		statLabel1: "Проверенных доноров",
+		statLabel2: "Национальностей",
+		statLabel3: "Медицинская проверка",
 		
 		// Surrogate Section
 		surrogateTitle: "Суррогатные мамы",
 		surrogateText: "Профессиональный подбор суррогатных мам с полным медицинским и юридическим сопровождением. Мы гарантируем безопасность и конфиденциальность на всех этапах программы.",
+		benefit1Title: "Безопасность",
+		benefit1Text: "Полная проверка всех кандидатов службой безопасности",
+		benefit2Title: "Медицинская поддержка",
+		benefit2Text: "Круглосуточное наблюдение и медицинское сопровождение",
+		benefit3Title: "Юридическая защита",
+		benefit3Text: "Полное юридическое сопровождение на всех этапах",
+		benefit4Title: "Психологическая поддержка",
+		benefit4Text: "Регулярные консультации с психологом для всех участников",
 		step1Title: "Подбор кандидата",
 		step1Text: "Тщательный отбор и проверка всех кандидатов",
 		step2Title: "Медицинское обследование",
@@ -94,7 +118,31 @@ const translations = {
 		step3Title: "Юридическое оформление",
 		step3Text: "Оформление всех необходимых документов",
 		step4Title: "Сопровождение беременности",
-		step4Text: "Постоянный контроль и поддержка"
+		step4Text: "Постоянный контроль и поддержка",
+		
+		// Contacts Section
+		contactsDescription: "Свяжитесь с нами любым удобным способом. Мы работаем для вас и готовы ответить на все ваши вопросы.",
+		contactKsenia: "Ксения",
+		contactKseniaRole: "Руководитель агентства",
+		contactIrina: "Ирина",
+		contactIrinaRole: "Координатор программ",
+		contactInstagram: "Instagram",
+		contactInstagramRole: "Следите за нашими новостями",
+		contactInstagramNote: "Ежедневные обновления и полезная информация",
+		contactWhatsApp: "Написать в WhatsApp",
+		contactWorkingHours: "Режим работы",
+		contactWorkingHoursRole: "Мы всегда на связи",
+		contactWorkingHoursMonFri: "Пн - Пт: 9:00 - 20:00",
+		contactWorkingHoursSatSun: "Сб - Вс: 10:00 - 18:00",
+		contactWorkingHoursNote: "Консультации доступны в любое время",
+		contactEmail: "Электронная почта",
+		contactEmailRole: "Напишите нам",
+		contactEmailNote: "Ответим в течение 24 часов",
+		contactOffice: "Офис",
+		contactOfficeRole: "Алматы, Казахстан",
+		contactOfficeAddress: "Консультации проводятся онлайн и офлайн",
+		contactOfficeNote: "Точный адрес предоставляется при записи",
+		whatsappButtonTitle: "Написать в WhatsApp"
 	},
 	
 	en: {
@@ -115,6 +163,10 @@ const translations = {
 		heroSubtitle: "We offer the best price-quality ratio! We provide services within a limited budget and the contract price remains unchanged from the moment of signing!",
 		btnContact: "Contact Us",
 		btnServices: "Our Services",
+		heroFeature1: "More than 10 years of experience",
+		heroFeature2: "More than 300 verified donors",
+		heroFeature3: "Full legal support",
+		heroFeature4: "Individual approach",
 		
 		// Services
 		servicesTitle: "We provide a full range of services",
@@ -156,6 +208,12 @@ const translations = {
 		blogTitle: "Blog",
 		blogReadMore: "read more",
 		blogViewAll: "View All on Instagram",
+		blog1Title: "Solving the problem of 'Infertility' with the help of IVF",
+		blog1Excerpt: "Modern methods of in vitro fertilization allow many couples to find the happiness of parenthood. We use advanced technologies and an individual approach to each couple.",
+		blog2Title: "Donation / surrogacy",
+		blog2Excerpt: "Professional support at all stages of the donation and surrogacy program. Full legal and medical support.",
+		blog3Title: "ZAROZHDENIE — your reliable partner",
+		blog3Excerpt: "We help couples find the happiness of parenthood with modern reproductive technologies. Over 10 years of experience in the field of reproductive medicine.",
 		
 		// Contact Form
 		contactTitle: "Good people should multiply :)",
@@ -180,10 +238,24 @@ const translations = {
 		donationFeature1: "Complete medical examination",
 		donationFeature2: "Psychological testing",
 		donationFeature3: "Legal support",
+		donationFeature4: "Physiognomic analysis",
+		donationFeature5: "Genetic testing",
+		donationFeature6: "Stimulation control",
+		statLabel1: "Verified donors",
+		statLabel2: "Nationalities",
+		statLabel3: "Medical check",
 		
 		// Surrogate Section
 		surrogateTitle: "Surrogate Mothers",
 		surrogateText: "Professional selection of surrogate mothers with full medical and legal support. We guarantee safety and confidentiality at all stages of the program.",
+		benefit1Title: "Security",
+		benefit1Text: "Full background check of all candidates by the security service",
+		benefit2Title: "Medical Support",
+		benefit2Text: "24/7 observation and medical assistance",
+		benefit3Title: "Legal Protection",
+		benefit3Text: "Full legal support at all stages",
+		benefit4Title: "Psychological Support",
+		benefit4Text: "Regular consultations with a psychologist for all participants",
 		step1Title: "Candidate Selection",
 		step1Text: "Thorough selection and verification of all candidates",
 		step2Title: "Medical Examination",
@@ -191,7 +263,31 @@ const translations = {
 		step3Title: "Legal Registration",
 		step3Text: "Registration of all necessary documents",
 		step4Title: "Pregnancy Support",
-		step4Text: "Constant monitoring and support"
+		step4Text: "Constant monitoring and support",
+		
+		// Contacts Section
+		contactsDescription: "Contact us in any convenient way. We work for you and are ready to answer all your questions.",
+		contactKsenia: "Ksenia",
+		contactKseniaRole: "Agency Head",
+		contactIrina: "Irina",
+		contactIrinaRole: "Program Coordinator",
+		contactInstagram: "Instagram",
+		contactInstagramRole: "Follow our news",
+		contactInstagramNote: "Daily updates and useful information",
+		contactWhatsApp: "Write on WhatsApp",
+		contactWorkingHours: "Working Hours",
+		contactWorkingHoursRole: "We are always in touch",
+		contactWorkingHoursMonFri: "Mon - Fri: 9:00 - 20:00",
+		contactWorkingHoursSatSun: "Sat - Sun: 10:00 - 18:00",
+		contactWorkingHoursNote: "Consultations are available at any time",
+		contactEmail: "Email",
+		contactEmailRole: "Write to us",
+		contactEmailNote: "We will respond within 24 hours",
+		contactOffice: "Office",
+		contactOfficeRole: "Almaty, Kazakhstan",
+		contactOfficeAddress: "Consultations are held online and offline",
+		contactOfficeNote: "Exact address is provided upon appointment",
+		whatsappButtonTitle: "Write on WhatsApp"
 	},
 	
 	cn: {
@@ -212,6 +308,10 @@ const translations = {
 		heroSubtitle: "我们提供最佳的价格质量比！我们在有限的预算内提供服务，合同价格自签署之日起保持不变！",
 		btnContact: "联系我们",
 		btnServices: "我们的服务",
+		heroFeature1: "超过10年经验",
+		heroFeature2: "超过300名经过验证的捐赠者",
+		heroFeature3: "完整的法律支持",
+		heroFeature4: "个性化方法",
 		
 		// Services
 		servicesTitle: "我们提供全方位服务",
@@ -253,6 +353,12 @@ const translations = {
 		blogTitle: "博客",
 		blogReadMore: "阅读更多",
 		blogViewAll: "在Instagram上查看全部",
+		blog1Title: "通过试管婴儿解决'不孕'问题",
+		blog1Excerpt: "现代体外受精方法使许多夫妇能够找到为人父母的幸福。我们使用先进技术和对每对夫妇的个性化方法。",
+		blog2Title: "捐赠 / 代孕",
+		blog2Excerpt: "在捐赠和代孕项目的所有阶段提供专业支持。完整的法律和医疗支持。",
+		blog3Title: "起源 — 您可靠的合作伙伴",
+		blog3Excerpt: "我们通过现代生殖技术帮助夫妇找到为人父母的幸福。在生殖医学领域拥有超过10年的经验。",
 		
 		// Contact Form
 		contactTitle: "好人应该繁衍 :)",
@@ -277,10 +383,24 @@ const translations = {
 		donationFeature1: "完整医疗检查",
 		donationFeature2: "心理测试",
 		donationFeature3: "法律支持",
+		donationFeature4: "面相分析",
+		donationFeature5: "基因测试",
+		donationFeature6: "刺激控制",
+		statLabel1: "经过验证的捐赠者",
+		statLabel2: "国籍",
+		statLabel3: "医疗检查",
 		
 		// Surrogate Section
 		surrogateTitle: "代孕妈妈",
 		surrogateText: "专业选择代孕妈妈，提供完整的医疗和法律支持。我们保证在项目的所有阶段都提供安全和保密性。",
+		benefit1Title: "安全",
+		benefit1Text: "安全部门对所有候选人进行全面背景调查",
+		benefit2Title: "医疗支持",
+		benefit2Text: "24/7观察和医疗协助",
+		benefit3Title: "法律保护",
+		benefit3Text: "在所有阶段提供完整的法律支持",
+		benefit4Title: "心理支持",
+		benefit4Text: "为所有参与者提供定期心理医生咨询",
 		step1Title: "候选人选择",
 		step1Text: "仔细选择和验证所有候选人",
 		step2Title: "医疗检查",
@@ -288,7 +408,31 @@ const translations = {
 		step3Title: "法律注册",
 		step3Text: "注册所有必要文件",
 		step4Title: "妊娠支持",
-		step4Text: "持续监控和支持"
+		step4Text: "持续监控和支持",
+		
+		// Contacts Section
+		contactsDescription: "以任何方便的方式联系我们。我们为您工作，随时准备回答您的所有问题。",
+		contactKsenia: "克谢尼娅",
+		contactKseniaRole: "机构负责人",
+		contactIrina: "伊琳娜",
+		contactIrinaRole: "项目协调员",
+		contactInstagram: "Instagram",
+		contactInstagramRole: "关注我们的新闻",
+		contactInstagramNote: "每日更新和有用信息",
+		contactWhatsApp: "在WhatsApp上留言",
+		contactWorkingHours: "工作时间",
+		contactWorkingHoursRole: "我们随时保持联系",
+		contactWorkingHoursMonFri: "周一 - 周五: 9:00 - 20:00",
+		contactWorkingHoursSatSun: "周六 - 周日: 10:00 - 18:00",
+		contactWorkingHoursNote: "随时可提供咨询",
+		contactEmail: "电子邮件",
+		contactEmailRole: "给我们写信",
+		contactEmailNote: "我们将在24小时内回复",
+		contactOffice: "办公室",
+		contactOfficeRole: "阿拉木图，哈萨克斯坦",
+		contactOfficeAddress: "提供在线和线下咨询",
+		contactOfficeNote: "预约时提供确切地址",
+		whatsappButtonTitle: "在WhatsApp上留言"
 	}
 };
 

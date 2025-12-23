@@ -36,6 +36,14 @@ function translatePage(lang) {
 		}
 	});
 	
+	// Translate title attributes
+	document.querySelectorAll('[data-translate-title]').forEach(element => {
+		const key = element.getAttribute('data-translate-title');
+		if (t[key]) {
+			element.setAttribute('title', t[key]);
+		}
+	});
+	
 	// Update page title and description
 	if (t.pageTitle) {
 		document.title = t.pageTitle;
