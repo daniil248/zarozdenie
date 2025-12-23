@@ -334,4 +334,25 @@ document.addEventListener('DOMContentLoaded', function() {
 			bgImage.src = bgUrl;
 		}
 	});
+	
+	// Load background images for service cards
+	const serviceCards = document.querySelectorAll('.service-card[data-service-bg]');
+	serviceCards.forEach(card => {
+		const bgUrl = card.getAttribute('data-service-bg');
+		if (bgUrl) {
+			// Set CSS variable for ::before pseudo-element
+			card.style.setProperty('--service-bg-image', `url(${bgUrl})`);
+			
+			// Preload image to ensure it's ready
+			const bgImage = new Image();
+			bgImage.onload = function() {
+				// Image loaded successfully, CSS variable is already set
+			};
+			bgImage.onerror = function() {
+				// Fallback to gradient if image fails to load
+				card.style.setProperty('--service-bg-image', 'linear-gradient(135deg, rgba(107, 76, 138, 0.1) 0%, rgba(64, 42, 84, 0.1) 100%)');
+			};
+			bgImage.src = bgUrl;
+		}
+	});
 });

@@ -49,11 +49,13 @@ const translations = {
 		service3Feature6: "В 36 недель беременности заключаем договор на платные партнёрские роды с акушер-гинекологом в одном из ведущих роддомов Алматы. При желании Заказчики присутствуют на родах наших сурмам.",
 		
 		service4Title: "Патронаж + пансионат",
-		service4Desc: "Уникальный пансионат для суррогатных мам",
-		service4Feature1: "В программу полного патронажа включен полный спект услуг",
-		service4Feature2: "Проживание в комфортабельных апартаментах",
-		service4Feature3: "Улучшенное пятиразовое питание",
-		service4Feature4: "Круглосуточное наблюдение",
+		service4Desc: "Международная сеть пансионатов для суррогатных мам",
+		service4Feature1: "Мы гордимся тем, что работаем в разных странах мира! Наши пансионаты расположены в Европе, на Кипре, в Грузии и других странах, что позволяет нам предоставлять услуги высочайшего качества независимо от географического расположения.",
+		service4Feature2: "Международное присутствие — это не просто удобство, это огромное преимущество! Мы можем предложить вам лучшие условия, современное медицинское оборудование и комфортабельные апартаменты в странах с развитой медицинской инфраструктурой.",
+		service4Feature3: "Работа в разных странах позволяет нам выбирать оптимальные условия для каждой программы. Европейские стандарты качества, средиземноморский климат Кипра, передовые технологии — все это доступно нашим клиентам.",
+		service4Feature4: "В программу полного патронажа включен полный спектр услуг: проживание в комфортабельных апартаментах, улучшенное пятиразовое питание, круглосуточное наблюдение медицинским персоналом, психологическая поддержка и полное юридическое сопровождение.",
+		service4Feature5: "Наши международные пансионаты оснащены всем необходимым для комфортного пребывания суррогатных мам. Мы обеспечиваем не только медицинский уход, но и создаем домашнюю атмосферу, что крайне важно для успешного протекания беременности.",
+		service4Feature6: "Это действительно круто — иметь возможность работать в разных странах! Мы можем предложить вам программы в тех странах, где законодательство наиболее благоприятно, а медицинские услуги находятся на высочайшем уровне. Это важно и полезно для всех участников программы.",
 		
 		// Health Section
 		healthTitle: "Здоровье кандидата будет полностью проверено",
@@ -147,8 +149,8 @@ const translations = {
 	
 	en: {
 		// Page meta
-		pageTitle: "Surrogacy Agency ZAROZHDENIE",
-		pageDescription: "ZAROZHDENIE — surrogacy agency. Professional selection and search for surrogate mothers, legal and medical support. Individual approach and confidentiality at every stage of the program. Contact us for consultation!",
+		pageTitle: "Surrogacy Agency Origin",
+		pageDescription: "Origin — surrogacy agency. Professional selection and search for surrogate mothers, legal and medical support. Individual approach and confidentiality at every stage of the program. Contact us for consultation!",
 		logoSubtitle: "IVF / Donation / Surrogacy",
 		
 		// Navigation
@@ -159,7 +161,7 @@ const translations = {
 		navContacts: "Contacts",
 		
 		// Hero Section
-		heroTitle: "Surrogacy Agency ZAROZHDENIE",
+		heroTitle: "Surrogacy Agency Origin",
 		heroSubtitle: "We offer the best price-quality ratio! We provide services within a limited budget and the contract price remains unchanged from the moment of signing!",
 		btnContact: "Contact Us",
 		btnServices: "Our Services",
@@ -194,11 +196,13 @@ const translations = {
 		service3Feature6: "At 36 weeks of pregnancy, we conclude a contract for paid partner childbirth with an obstetrician-gynecologist in one of the leading maternity hospitals in Almaty. If desired, Clients are present at the birth of our surrogate mothers.",
 		
 		service4Title: "Patronage + Boarding House",
-		service4Desc: "Unique boarding house for surrogate mothers",
-		service4Feature1: "Full range of services included in the full patronage program",
-		service4Feature2: "Accommodation in comfortable apartments",
-		service4Feature3: "Improved five meals a day",
-		service4Feature4: "24/7 monitoring",
+		service4Desc: "International network of boarding houses for surrogate mothers",
+		service4Feature1: "We are proud to work in different countries around the world! Our boarding houses are located in Europe, Cyprus, Georgia and other countries, which allows us to provide the highest quality services regardless of geographical location.",
+		service4Feature2: "International presence is not just a convenience, it's a huge advantage! We can offer you the best conditions, modern medical equipment and comfortable apartments in countries with developed medical infrastructure.",
+		service4Feature3: "Working in different countries allows us to choose optimal conditions for each program. European quality standards, Mediterranean climate of Cyprus, advanced technologies — all this is available to our clients.",
+		service4Feature4: "The full patronage program includes a full range of services: accommodation in comfortable apartments, improved five meals a day, 24/7 monitoring by medical staff, psychological support and full legal support.",
+		service4Feature5: "Our international boarding houses are equipped with everything necessary for comfortable stay of surrogate mothers. We provide not only medical care, but also create a home atmosphere, which is extremely important for successful pregnancy.",
+		service4Feature6: "It's really cool to have the opportunity to work in different countries! We can offer you programs in countries where legislation is most favorable and medical services are at the highest level. This is important and useful for all program participants.",
 		
 		// Health Section
 		healthTitle: "Candidate's health will be fully checked",
@@ -339,11 +343,13 @@ const translations = {
 		service3Feature6: "在妊娠36周时，我们在阿拉木图领先的妇产医院之一与产科医生签订付费伴侣分娩合同。如果客户愿意，可以在我们代孕妈妈的分娩时在场。",
 		
 		service4Title: "监护 + 寄宿公寓",
-		service4Desc: "代孕妈妈独特的寄宿公寓",
-		service4Feature1: "全面监护计划包括全方位服务",
-		service4Feature2: "舒适的公寓住宿",
-		service4Feature3: "改善的五餐制",
-		service4Feature4: "24/7监控",
+		service4Desc: "代孕妈妈国际寄宿公寓网络",
+		service4Feature1: "我们为在世界不同国家工作而感到自豪！我们的寄宿公寓位于欧洲、塞浦路斯、格鲁吉亚和其他国家，这使我们能够提供最高质量的服务，无论地理位置如何。",
+		service4Feature2: "国际存在不仅仅是便利，这是一个巨大的优势！我们可以为您提供最佳条件、现代医疗设备和在医疗基础设施发达国家的舒适公寓。",
+		service4Feature3: "在不同国家工作使我们能够为每个项目选择最佳条件。欧洲质量标准、塞浦路斯的地中海气候、先进技术——所有这些都可供我们的客户使用。",
+		service4Feature4: "全面监护计划包括全方位服务：舒适的公寓住宿、改善的五餐制、医疗人员24/7监控、心理支持和完整的法律支持。",
+		service4Feature5: "我们的国际寄宿公寓配备了代孕妈妈舒适住宿所需的一切。我们不仅提供医疗护理，还营造家庭氛围，这对成功怀孕极为重要。",
+		service4Feature6: "能够在不同国家工作真的很棒！我们可以为您提供在立法最有利、医疗服务处于最高水平的国家的项目。这对所有项目参与者都很重要和有用。",
 		
 		// Health Section
 		healthTitle: "候选人的健康将得到全面检查",
