@@ -385,4 +385,202 @@ document.addEventListener('DOMContentLoaded', function() {
 			bgImage.src = bgUrl;
 		}
 	});
+	
+	// Reviews slider functionality
+	const reviewsSlider = document.getElementById('reviews-slider');
+	const prevBtn = document.getElementById('prev-review');
+	const nextBtn = document.getElementById('next-review');
+	const reviewsDots = document.getElementById('reviews-dots');
+	
+	let currentReviewIndex = 0;
+	let reviewImages = [];
+	
+	// Function to load review images based on language
+	function loadReviews() {
+		const reviewFolder = currentLang === 'ru' ? 'reviews/ru' : 'reviews/en-cn';
+		reviewImages = [];
+		
+		// Try to load images (assuming they will be named review-1.jpg, review-2.jpg, etc.)
+		// We'll check for common image extensions
+		const extensions = ['jpg', 'jpeg', 'png', 'webp'];
+		let imageIndex = 1;
+		let loadedCount = 0;
+		const maxAttempts = 20; // Maximum number of images to try
+		
+		function tryLoadImage(index) {
+			if (index > maxAttempts) {
+			if (reviewImages.length === 0) {
+				// If no images found, show placeholder
+				const placeholderText = currentLang === 'ru' ? 'Отзывы скоро появятся' : 
+				                       currentLang === 'cn' ? '评论即将推出' : 'Reviews coming soon';
+				reviewsSlider.innerHTML = `<div class="review-item"><p>${placeholderText}</p></div>`;
+			} else {
+				renderReviews();
+			}
+				return;
+			}
+			
+			let found = false;
+			let extIndex = 0;
+			
+			function tryExtension() {
+				if (extIndex >= extensions.length) {
+					if (!found) {
+						// Try next image number
+						tryLoadImage(index + 1);
+					}
+					return;
+				}
+				
+				const ext = extensions[extIndex];
+				const imgPath = `${reviewFolder}/review-${index}.${ext}`;
+				const img = new Image();
+				
+				img.onload = function() {
+					if (!found) {
+						found = true;
+						reviewImages.push(imgPath);
+						loadedCount++;
+						renderReviews();
+						// Continue loading more images
+						tryLoadImage(index + 1);
+					}
+				};
+				
+				img.onerror = function() {
+					extIndex++;
+					tryExtension();
+				};
+				
+				img.src = imgPath;
+			}
+			
+			tryExtension();
+		}
+		
+		tryLoadImage(1);
+	}
+	
+	// Function to render reviews
+	function renderReviews() {
+		if (reviewImages.length === 0) return;
+		
+		reviewsSlider.innerHTML = '';
+		reviewImages.forEach((imgPath, index) => {
+			const reviewItem = document.createElement('div');
+			reviewItem.className = 'review-item';
+			reviewItem.innerHTML = `<img src="${imgPath}" alt="Review ${index + 1}" class="review-image">`;
+			reviewsSlider.appendChild(reviewItem);
+		});
+		
+		// Update dots
+		reviewsDots.innerHTML = '';
+		for (let i = 0; i < reviewImages.length; i++) {
+			const dot = document.createElement('div');
+			dot.className = `review-dot ${i === currentReviewIndex ? 'active' : ''}`;
+			dot.addEventListener('click', () => goToReview(i));
+			reviewsDots.appendChild(dot);
+		}
+		
+		updateSliderPosition();
+		updateButtons();
+	}
+	
+	// Function to update slider position
+	function updateSliderPosition() {
+		if (reviewImages.length === 0) return;
+		const itemWidth = reviewsSlider.offsetWidth;
+		reviewsSlider.scrollLeft = currentReviewIndex * itemWidth;
+	}
+	
+	// Function to update navigation buttons
+	function updateButtons() {
+		if (prevBtn) prevBtn.disabled = currentReviewIndex === 0;
+		if (nextBtn) nextBtn.disabled = currentReviewIndex >= reviewImages.length - 1;
+	}
+	
+	// Function to go to specific review
+	function goToReview(index) {
+		if (index < 0 || index >= reviewImages.length) return;
+		currentReviewIndex = index;
+		updateSliderPosition();
+		updateButtons();
+		
+		// Update dots
+		document.querySelectorAll('.review-dot').forEach((dot, i) => {
+			dot.classList.toggle('active', i === index);
+		});
+	}
+	
+	// Navigation functions
+	function nextReview() {
+		if (currentReviewIndex < reviewImages.length - 1) {
+			goToReview(currentReviewIndex + 1);
+		}
+	}
+	
+	function prevReview() {
+		if (currentReviewIndex > 0) {
+			goToReview(currentReviewIndex - 1);
+		}
+	}
+	
+	// Event listeners
+	if (nextBtn) {
+		nextBtn.addEventListener('click', nextReview);
+	}
+	
+	if (prevBtn) {
+		prevBtn.addEventListener('click', prevReview);
+	}
+	
+	// Auto-play functionality (optional)
+	let autoPlayInterval;
+	function startAutoPlay() {
+		autoPlayInterval = setInterval(() => {
+			if (currentReviewIndex < reviewImages.length - 1) {
+				nextReview();
+			} else {
+				goToReview(0);
+			}
+		}, 5000); // Change slide every 5 seconds
+	}
+	
+	function stopAutoPlay() {
+		if (autoPlayInterval) {
+			clearInterval(autoPlayInterval);
+		}
+	}
+	
+	// Pause auto-play on hover
+	if (reviewsSlider) {
+		reviewsSlider.addEventListener('mouseenter', stopAutoPlay);
+		reviewsSlider.addEventListener('mouseleave', () => {
+			if (reviewImages.length > 1) {
+				startAutoPlay();
+			}
+		});
+	}
+	
+	// Store original translatePage function
+	const originalTranslatePage = translatePage;
+	
+	// Override translatePage to reload reviews
+	window.translatePage = function(lang) {
+		originalTranslatePage(lang);
+		currentReviewIndex = 0;
+		loadReviews();
+	};
+	
+	// Load reviews on page load
+	loadReviews();
+	
+	// Handle window resize
+	let resizeTimeout;
+	window.addEventListener('resize', () => {
+		clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(() => {
+			updateSliderPosition();
+		}, 250);
+	});
 });

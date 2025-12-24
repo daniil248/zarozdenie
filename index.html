@@ -157,20 +157,17 @@
 					</ul>
 				</div>
 
-				<!-- Service 4: Патронаж + пансионат -->
-				<div class="service-card border_bottom_block" data-service-bg="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=800&h=600&fit=crop">
+				<!-- Service 4: Медицинское обследование -->
+				<div class="service-card border_bottom_block" data-service-bg="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop">
 					<div class="service-icon">
-						<i class="fas fa-home"></i>
+						<i class="fas fa-stethoscope"></i>
 					</div>
-					<h3 class="service-title" data-translate="service4Title">Патронаж + пансионат</h3>
-					<p class="service-description" data-translate="service4Desc">Международная сеть пансионатов для суррогатных мам</p>
+					<h3 class="service-title" data-translate="service4Title">Медицинское обследование</h3>
+					<p class="service-description" data-translate="service4Desc">Полная проверка здоровья кандидатов</p>
 					<ul class="service-features">
-						<li data-translate="service4Feature1">Мы гордимся тем, что работаем в разных странах мира! Наши пансионаты расположены в Европе, на Кипре, в Грузии и других странах, что позволяет нам предоставлять услуги высочайшего качества независимо от географического расположения.</li>
-						<li data-translate="service4Feature2">Международное присутствие — это не просто удобство, это огромное преимущество! Мы можем предложить вам лучшие условия, современное медицинское оборудование и комфортабельные апартаменты в странах с развитой медицинской инфраструктурой.</li>
-						<li data-translate="service4Feature3">Работа в разных странах позволяет нам выбирать оптимальные условия для каждой программы. Европейские стандарты качества, средиземноморский климат Кипра, передовые технологии — все это доступно нашим клиентам.</li>
-						<li data-translate="service4Feature4">В программу полного патронажа включен полный спектр услуг: проживание в комфортабельных апартаментах, улучшенное пятиразовое питание, круглосуточное наблюдение медицинским персоналом, психологическая поддержка и полное юридическое сопровождение.</li>
-						<li data-translate="service4Feature5">Наши международные пансионаты оснащены всем необходимым для комфортного пребывания суррогатных мам. Мы обеспечиваем не только медицинский уход, но и создаем домашнюю атмосферу, что крайне важно для успешного протекания беременности.</li>
-						<li data-translate="service4Feature6">Это действительно круто — иметь возможность работать в разных странах! Мы можем предложить вам программы в тех странах, где законодательство наиболее благоприятно, а медицинские услуги находятся на высочайшем уровне. Это важно и полезно для всех участников программы.</li>
+						<li data-translate="service4Feature1">Здоровье кандидата будет полностью проверено. Иногда женщина, являющаяся кандидатом в суррогатные мамы, может соответствовать высоким требованиям, но в результате анализа выясняется наличие таких инфекций, как сифилис.</li>
+						<li data-translate="service4Feature2">Если проблема со здоровьем обнаружена, мы постараемся вылечить её. Мы проводим полное медицинское обследование всех кандидатов перед началом программы.</li>
+						<li data-translate="service4Feature3">Все анализы и обследования проводятся в лучших медицинских учреждениях с использованием современного оборудования.</li>
 					</ul>
 				</div>
 			</div>
@@ -282,11 +279,24 @@
 		</div>
 	</section>
 
-	<!-- Health Check Section -->
-	<section class="health-section">
+	<!-- Reviews Section -->
+	<section class="reviews-section" id="reviews">
 		<div class="container">
-			<h2 class="section-title" data-translate="healthTitle">Здоровье кандидата будет полностью проверено</h2>
-			<p class="section-text" data-translate="healthText">Иногда женщина, являющаяся кандидатом в суррогатные мамы, может соответствовать высоким требованиям, но в результате анализа выясняется наличие таких инфекций, как сифилис. Если проблема со здоровьем обнаружена, мы постараемся вылечить...</p>
+			<h2 class="section-title" data-translate="reviewsTitle">Отзывы наших клиентов</h2>
+			<div class="reviews-container">
+				<div class="reviews-slider" id="reviews-slider">
+					<!-- Reviews will be dynamically loaded based on language -->
+				</div>
+				<div class="reviews-controls">
+					<button class="review-nav-btn prev-btn" id="prev-review" aria-label="Previous review">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<div class="reviews-dots" id="reviews-dots"></div>
+					<button class="review-nav-btn next-btn" id="next-review" aria-label="Next review">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
