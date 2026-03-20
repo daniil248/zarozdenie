@@ -1,0 +1,16 @@
+{
+  "user_not_found": "User not found",
+  "user_found": "User exist",
+  "something_error": "Something went wrong, try again",
+  "password_incorrect": "Password incorrect",
+  "image_required": "Image required",
+  "cannot_save_photo": "Cannot save photos",
+  "not_found": "Not found",
+  "successful_login": "Successful login",
+  "successful_reg": "Successful registration, please wait for moderator approval",
+  "successful_create": "The questionnaire has been successfully created, wait for the manager to contact you",
+  "successful_update": "Questionnaire successfully updated",
+  "successful_order": "You have successfully applied for this questionnaire, you will be contacted shortly",
+  "wait_order": "You have already left an order on this form, expect a call from a manager",
+  "successful_delete": "Successfully deleted"
+}

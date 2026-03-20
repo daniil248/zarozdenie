@@ -1,0 +1,17 @@
+.ankets {
+  padding: 40px 0;
+
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+
+  }
+
+  .profile__list-wrapper {
+    margin-top: 64px;
+
+    @media (max-width:960px) {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  name       String
+  number     String   @unique
+  password   String
+  role       Roles    @default(USER)
+  status     Boolean  @default(false)
+  created_at DateTime @default(now())
+  orders     Order[]
+}
+
+model Product {
+  id                        Int      @id @default(autoincrement()) // Уникальный id 
+  created_at                DateTime @default(now()) // Время создания анкеты
+  status                    Boolean  @default(false) // Статус для модерации
+  number                    String // Номер телефона
+  images                    String[] // Фотографии
+  orders                    Order[] // Это для тех, кто оставляет заявки
+  age                       Int
+  weight                    Int // Вес (в кг)
+  height                    Int // Рост (в см)
+  has_twins                 String // В семье есть близнецы
+  menstrual_cycle           String // Регулярный менструальный цикл
+  has_twins_en              String? // В семье есть близнецы
+  menstrual_cycle_en        String? // Регулярный менструальный цикл
+  email                     String
+  name                      String?
+  name_en                   String? // Наименование на английском
+  nationality               String? // Национальность
+  nationality_en            String? // Национальность на английском
+  eye_color                 String? // Цвет глаз
+  eye_color_en              String? // Цвет глаз на английском
+  hair_color                String? // Цвет волос
+  hair_color_en             String? // Цвет волос на английском
+  habits                    String? // Вредные привычки
+  habits_en                 String? // Вредные привычки на английском
+  country                   String? // Страна
+  country_en                String? // Страна на английском
+  city                      String? // Город
+  city_en                   String? // Город на английском
+  religion                  String? // Религия
+  religion_en               String? // Религия на английском
+  profession                String? // Профессия
+  profession_en             String? // Профессия на английском
+  allergies                 String? // Аллергии
+  allergies_en              String? // Аллергии на английском
+  chronic_diseases          String? // Хронические заболевания
+  chronic_diseases_en       String? // Хронические заболевания на английском
+  reproductive_history      String? // Репродуктивная история
+  reproductive_history_en   String? // Репродуктивная история на английском
+  pregnancy_outcome         String? // Исход беременности
+  pregnancy_outcome_en      String? // Исход беременности на английском
+  contraceptive_use         String? // Использование противозачаточных средств
+  contraceptive_use_en      String? // Использование противозачаточных средств на английском
+  health_problems           String? // Проблемы со здоровьем
+  health_problems_en        String? // Проблемы со здоровьем на английском
+  family_medical_history    String? // Генетические заболевания в семье
+  family_medical_history_en String? // Генетические заболевания в семье на английском
+  additional_info           String? // Дополнительная информация
+  additional_info_en        String? // Дополнительная информация на английском
+  genetic_history           String? // Генетическая история
+  genetic_history_en        String? // Генетическая история на английском
+  resus                     String? // Резус
+  resus_en                  String? // Резус на английском
+  blood_type                String? // группа крови
+  blood_type_en             String? // группа крови на английском
+  childrens                 String? // кол-во детей
+  childrens_en              String? //кол-во детей на английскои
+  education                 String? //образование
+  education_en              String? //образование на английском
+  ganorar                   String?  @default("1") // Ганорар
+}
+
+model Order {
+  id         Int     @id @default(autoincrement())
+  product_id Int
+  product    Product @relation(fields: [product_id], references: [id], onDelete: Cascade)
+  user_id    Int
+  user       User    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
+
+enum Roles {
+  ADMIN
+  USER
+}

@@ -1,0 +1,135 @@
+.block {
+  padding: 72px 0;
+  box-sizing: border-box;
+  margin-top: 72px;
+  background: linear-gradient(135deg, rgba($pink, 0.75) 0%, rgba($light-pink, 0.7) 100%);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  border-radius: 24px;
+  border: 1px solid rgba($purple, 0.12);
+  box-shadow: 0 10px 40px rgba($purple, 0.07);
+  max-width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1280px) {
+    max-width: 1168px;
+  }
+
+  &__toggler {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:660px) {
+      margin-bottom: 20px;
+    }
+
+    div {
+      color: $black;
+      background-color: $light-pink;
+      padding: 16px 86px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      cursor: pointer;
+
+      &:first-child {
+        border-radius: 12px 0px 0px 12px;
+      }
+
+      &:last-child {
+        border-radius: 0px 12px 12px 0px;
+      }
+
+      @media (max-width:1280px) {
+        padding: 12px 60px;
+      }
+
+      @media (max-width:660px) {
+        padding: 12px 40px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media (max-width:480px) {
+        padding: 12px 30px;
+      }
+
+      &.active {
+        background-color: $purple;
+        color: $white;
+        cursor: default;
+      }
+    }
+  }
+
+  p {
+    padding-bottom: 48px;
+    padding-top: 32px;
+    max-width: 660px;
+    margin: 0 auto;
+
+    @media (max-width:960px) {
+      padding: 14px 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:660px) {
+      flex-direction: column;
+    }
+
+    a {
+      background-color: transparent;
+      color: $purple;
+      border-radius: 56px;
+      border: 2px solid $purple;
+      padding: 22px 60px;
+      transition: $tr;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+
+      @media (max-width:960px) {
+        padding: 16px 40px;
+        font-size: 18px;
+      }
+
+      @media (max-width:660px) {
+        font-size: 16px;
+        padding: 10px 30px;
+        width: 60%;
+      }
+
+
+
+      &:hover {
+        background-color: darken($purple, 10);
+        border: 2px solid darken($purple, 10);
+        color: $white;
+      }
+
+      &:first-child {
+        margin-right: 24px;
+        background-color: $purple;
+        color: $white;
+
+        @media (max-width:660px) {
+          margin-right: 0;
+          margin-bottom: 14px;
+        }
+
+        &:hover {
+          background-color: darken($purple, 10);
+          color: $white;
+        }
+      }
+    }
+  }
+}

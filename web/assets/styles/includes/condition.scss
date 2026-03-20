@@ -1,0 +1,218 @@
+.condition {
+  margin-top: 68px;
+  padding: 48px 0 56px;
+  background: linear-gradient(180deg, rgba($light-pink, 0.45) 0%, rgba($pink, 0.2) 100%);
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  max-width: calc(100% - 24px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width:1280px) {
+    margin-top: 50px;
+    padding: 40px 0 48px;
+  }
+
+  @media (max-width:960px) {
+    max-width: 100%;
+  }
+
+  &__top {
+    margin-bottom: 56px;
+
+    @media (max-width:1280px) {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      padding-bottom: 35px;
+
+      @media (max-width:1280px) {
+        padding-bottom: 28px;
+      }
+    }
+
+    p {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+
+  &__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 32px;
+
+    @media (max-width:1280px) {
+      margin-bottom: 28px;
+    }
+
+    @media (max-width:960px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: $purple;
+      font-weight: 600;
+      line-height: 40px;
+      background: rgba($white, 0.95);
+      width: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 32px;
+      border-radius: 16px;
+      border: 1px solid rgba($purple, 0.2);
+      box-shadow: 0 4px 20px rgba($purple, 0.12), 0 1px 0 rgba($white, 0.9) inset;
+
+      @media (max-width:1280px) {
+        margin-right: 30px;
+        font-size: 26px;
+      }
+
+      @media (max-width:1024px) {
+        font-size: 22px;
+        width: 180px;
+      }
+
+      @media (max-width:960px) {
+        width: 90%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      @media (max-width:460px) {
+        width: 100%;
+      }
+
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: $text;
+      padding: 24px 48px;
+      box-sizing: border-box;
+      width: 877px;
+      background: rgba($white, 0.92);
+      border-radius: 16px;
+      border: 1px solid rgba($purple, 0.18);
+      box-shadow: 0 6px 24px rgba($purple, 0.1), 0 1px 0 rgba($white, 0.8) inset;
+
+      @media (max-width:1280px) {
+        font-size: 18px;
+        width: 724px;
+      }
+
+      @media (max-width:1024px) {
+        font-size: 16px !important;
+        width: 714px;
+      }
+
+      @media (max-width:960px) {
+        width: 90%;
+        padding: 20px !important;
+      }
+
+      @media (max-width:460px) {
+        width: 100%;
+      }
+    }
+
+
+    >div {
+      width: 877px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background: rgba($white, 0.92);
+      border-radius: 16px;
+      border: 1px solid rgba($purple, 0.18);
+      box-shadow: 0 6px 24px rgba($purple, 0.1), 0 1px 0 rgba($white, 0.8) inset;
+      box-sizing: border-box;
+
+      @media (max-width:1280px) {
+        width: 724px;
+      }
+
+      @media (max-width:1024px) {
+        font-size: 16px;
+        width: 714px;
+      }
+
+      @media (max-width:960px) {
+        width: 90%;
+      }
+
+      @media (max-width:460px) {
+        width: 100%;
+      }
+
+      p {
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-bottom: 0;
+
+        @media (max-width:1280px) {
+          font-size: 18px;
+        }
+
+        @media (max-width:960px) {
+          padding: 20px 0;
+        }
+      }
+
+      a {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 30px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 24px;
+        color: #939392;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+
+        box-sizing: border-box;
+
+        @media (max-width:1280px) {
+          font-size: 16px;
+          width: 90%;
+        }
+
+        @media (max-width:460px) {
+          font-size: 14px;
+
+
+          svg {
+            display: none;
+          }
+        }
+
+        svg {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

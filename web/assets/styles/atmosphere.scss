@@ -1,0 +1,181 @@
+// Фон и анимации в цветах бренда ($purple, $pink, $light-pink)
+
+@keyframes atmosphere-shift {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.05) translate(2%, -1%);
+  }
+}
+
+@keyframes atmosphere-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-12px, 8px);
+  }
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-atmosphere__bg,
+  .page-atmosphere__orb,
+  .page-home > * {
+    animation: none !important;
+  }
+}
+
+.page-atmosphere {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-atmosphere__bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: linear-gradient(
+    165deg,
+    $white 0%,
+    lighten($pink, 2%) 35%,
+    $light-pink 70%,
+    rgba($purple, 0.06) 100%
+  );
+}
+
+// Доп. слой света (без внешних картинок). Фото: добавьте public/atmosphere-bg.jpg и класс .page-atmosphere--photo на корень страницы
+.page-atmosphere__bg::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: linear-gradient(
+    180deg,
+    rgba($white, 0.88) 0%,
+    rgba($pink, 0.75) 40%,
+    rgba($light-pink, 0.82) 100%
+  );
+  filter: blur(20px);
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.page-atmosphere--photo .page-atmosphere__bg::before {
+  background-image: linear-gradient(
+      180deg,
+      rgba($white, 0.9) 0%,
+      rgba($pink, 0.82) 50%,
+      rgba($light-pink, 0.88) 100%
+    ),
+    url('/atmosphere-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(32px);
+  transform: scale(1.12);
+  opacity: 0.95;
+}
+
+.page-atmosphere__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: atmosphere-shift 18s ease-in-out infinite;
+
+  &--1 {
+    width: min(55vw, 480px);
+    height: min(55vw, 480px);
+    top: -8%;
+    right: -10%;
+    background: radial-gradient(circle, rgba($purple, 0.22) 0%, transparent 70%);
+    animation-delay: -4s;
+  }
+
+  &--2 {
+    width: min(50vw, 420px);
+    height: min(50vw, 420px);
+    bottom: 10%;
+    left: -12%;
+    background: radial-gradient(circle, rgba($purple, 0.14) 0%, transparent 68%);
+    animation-delay: -9s;
+  }
+
+  &--3 {
+    width: min(40vw, 320px);
+    height: min(40vw, 320px);
+    top: 40%;
+    left: 30%;
+    background: radial-gradient(circle, rgba($pink, 0.5) 0%, transparent 65%);
+    animation: atmosphere-float 22s ease-in-out infinite;
+    filter: blur(50px);
+  }
+}
+
+// Плавное появление секций главной (кроме фиксированного хедера — он без задержки)
+.page-home > * {
+  animation: section-reveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.page-home > *:nth-child(1) {
+  animation-delay: 0s;
+}
+.page-home > *:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.page-home > *:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.page-home > *:nth-child(4) {
+  animation-delay: 0.18s;
+}
+.page-home > *:nth-child(5) {
+  animation-delay: 0.22s;
+}
+.page-home > *:nth-child(6) {
+  animation-delay: 0.26s;
+}
+.page-home > *:nth-child(7) {
+  animation-delay: 0.3s;
+}
+.page-home > *:nth-child(8) {
+  animation-delay: 0.34s;
+}
+.page-home > *:nth-child(9) {
+  animation-delay: 0.38s;
+}
+
+// «Окно» — карточка с рамкой бренда
+.brand-window {
+  border-radius: 20px;
+  border: 1px solid rgba($purple, 0.18);
+  box-shadow:
+    0 4px 24px rgba($purple, 0.08),
+    0 1px 0 rgba($white, 0.8) inset;
+  background: rgba($white, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+
+  &:hover {
+    border-color: rgba($purple, 0.28);
+    box-shadow:
+      0 12px 40px rgba($purple, 0.12),
+      0 1px 0 rgba($white, 0.9) inset;
+  }
+}
