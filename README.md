@@ -1,24 +1,28 @@
 # Зарождение — веб (Nuxt) + API (Nest) + PostgreSQL
 
+Репозиторий: **https://github.com/daniil248/zarozdenie**
+
+## GitHub Pages (статический фронт)
+
+После включения **Settings → Pages → GitHub Actions** пуш в `main` собирает сайт:
+
+**https://daniil248.github.io/zarozdenie/**
+
+Подробности и CORS: [`docs/GITHUB-PAGES.md`](docs/GITHUB-PAGES.md)
+
 ## Деплой на VPS
 
-- Скрипт выкладки файлов: `deploy-web.ps1` (цель по умолчанию в скрипте).
-- Полный перенос БД и `uploads`: `docs/MIGRATION-SERVER.md`, скрипты в `scripts/`.
+- `deploy-web.ps1` — выкладка файлов на сервер.
+- БД и `uploads`: [`docs/MIGRATION-SERVER.md`](docs/MIGRATION-SERVER.md), скрипты в `scripts/`.
 
 ## Проверка данных после миграции
 
 ```powershell
-$env:VERIFY_HOST = "92.51.44.138"   # или старый сервер для сравнения
+$env:VERIFY_HOST = "92.51.44.138"
 .\scripts\verify-server-data.ps1
 ```
 
-Считаются записи в таблицах `Product`, `User`, `Order` и число файлов в `uploads`.
-
-## Тестовый фронт на GitHub Pages
-
-Инструкция: [`docs/GITHUB-PAGES.md`](docs/GITHUB-PAGES.md) — только статическая сборка Nuxt; API остаётся на сервере.
-
 ## Структура
 
-- `web/` — Nuxt 3 (SPA, `ssr: false`)
+- `web/` — Nuxt 3 (SPA)
 - `api/` — NestJS + Prisma

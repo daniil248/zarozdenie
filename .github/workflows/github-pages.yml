@@ -36,9 +36,12 @@ jobs:
       - name: Install & generate
         working-directory: web
         env:
+          # Проектный GitHub Pages: user.github.io/REPO/
+          NUXT_APP_BASE_URL: /zarozdenie/
+          NUXT_PUBLIC_SITE_URL: https://daniil248.github.io/zarozdenie
+          # Опционально переопределить в Secrets (иначе — дефолты из nuxt.config)
           NUXT_PUBLIC_API: ${{ secrets.NUXT_PUBLIC_API }}
           NUXT_PUBLIC_IMAGE: ${{ secrets.NUXT_PUBLIC_IMAGE }}
-          NUXT_APP_BASE_URL: ${{ secrets.NUXT_APP_BASE_URL }}
         run: |
           npm ci
           npx nuxi generate

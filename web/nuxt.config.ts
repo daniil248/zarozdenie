@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const appBase = process.env.NUXT_APP_BASE_URL || '/'
+const baseWithSlash = appBase.endsWith('/') ? appBase : `${appBase}/`
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
@@ -12,6 +15,8 @@ export default defineNuxtConfig({
     autoImport: true
   },
   i18n: {
+    // Канонический URL (для GitHub Pages: NUXT_PUBLIC_SITE_URL=https://daniil248.github.io/zarozdenie)
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://new-origin.kz',
     locales: [
       {
         code: 'ru',
@@ -61,7 +66,7 @@ export default defineNuxtConfig({
           content: 'Агентство суррогатного материнства ЗАРОЖДЕНИЕ: подбор суррогатной мамы и доноров ооцитов, юридическое и медицинское сопровождение.'
         }
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/logo.png' }]
+      link: [{ rel: 'icon', type: 'image/png', href: `${baseWithSlash}logo.png` }]
     }
   },
 })
