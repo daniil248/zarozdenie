@@ -7,7 +7,7 @@
           <NuxtLink :to="localePath('/')" class="the-logo the-logo--light" @click="closeMobileMenu">
             <img
               class="the-logo__img"
-              src="/logo-header-white.svg"
+              :src="publicAsset('logo-header-white.svg')"
               width="400"
               height="92"
               alt="Зарождение"
@@ -88,6 +88,7 @@ const { locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
 const anchor = useLocaleAnchor()
+const publicAsset = usePublicAsset()
 
 const mobileMenuOpen = ref(false)
 

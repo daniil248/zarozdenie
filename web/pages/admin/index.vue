@@ -1,9 +1,9 @@
 <template>
   <div class="ankets">
     <div class="container">
-      <div to="/" class="admin__top_link">
+      <NuxtLink :to="localePath('/')" class="admin__top_link">
         <TheLogo />
-      </div>
+      </NuxtLink>
       <h1 class="title">Анкеты</h1>
       <AdminMenu>
         <template #filters>
@@ -72,6 +72,7 @@ definePageMeta({
   admin: true
 })
 
+const localePath = useLocalePath()
 const productsStore = useProductStore()
 await productsStore.getAllAdmin()
 const products = computed(() => {

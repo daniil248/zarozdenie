@@ -1,5 +1,6 @@
 /**
- * Якоря на главной с учётом префикса локали (/en#…, /zh#…, /#…).
+ * Якоря на главной (id блока на index), не отдельные маршруты Vue.
+ * Формат: /zarozdenie/#aboutUs или /en/#aboutUs — со слэшем перед # для GitHub Pages.
  */
 export function useLocaleAnchor () {
   const localePath = useLocalePath()
@@ -7,7 +8,10 @@ export function useLocaleAnchor () {
   return (fragment: string) => {
     const id = fragment.replace(/^#/, '')
     const base = localePath('/')
-    const normalized = !base || base === '/' ? '' : String(base).replace(/\/$/, '')
-    return normalized ? `${normalized}#${id}` : `/#${id}`
+    const path =
+      !base || base === '/'
+        ? '/'
+        : (base.endsWith('/') ? base : `${base}/`)
+    return `${path}#${id}`
   }
 }

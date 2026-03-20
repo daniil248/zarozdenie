@@ -8,7 +8,11 @@
 
 **https://daniil248.github.io/zarozdenie/**
 
+Логин GitHub: **daniil248** (две буквы **i**). Поддомен `username.github.io` без имени репозитория — это **другой** сайт; нужен именно путь `/zarozdenie/`.
+
 Подробности и CORS: [`docs/GITHUB-PAGES.md`](docs/GITHUB-PAGES.md)
+
+Авторизация и роли: [`docs/AUTH.md`](docs/AUTH.md)
 
 ## Деплой на VPS
 

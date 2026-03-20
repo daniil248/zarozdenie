@@ -3,7 +3,7 @@
     <img
       v-if="light"
       class="the-logo__img"
-      src="/logo-header-white.svg"
+      :src="publicAsset('logo-header-white.svg')"
       width="260"
       height="60"
       alt="Зарождение"
@@ -110,4 +110,5 @@ withDefaults(
 )
 
 const localePath = useLocalePath()
+const publicAsset = usePublicAsset()
 </script>
