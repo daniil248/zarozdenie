@@ -66,7 +66,15 @@ export default defineNuxtConfig({
           content: 'Агентство суррогатного материнства ЗАРОЖДЕНИЕ: подбор суррогатной мамы и доноров ооцитов, юридическое и медицинское сопровождение.'
         }
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: `${baseWithSlash}logo.png` }]
+      link: [
+        { rel: 'icon', type: 'image/png', href: `${baseWithSlash}logo.png` },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap'
+        }
+      ]
     }
   },
 })

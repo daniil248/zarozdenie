@@ -29,10 +29,13 @@ html:has(.header) {
 
 body {
   margin: 0;
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   font-weight: 500;
   color: $text;
   background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Высота шапки: padding + логотип + padding */
@@ -71,9 +74,10 @@ body:has(.header) {
 }
 
 .title {
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 40px;
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 700;
   color: $black;
   text-align: center;
 
@@ -338,10 +342,21 @@ body:has(.header) {
   overflow: hidden;
   background: linear-gradient(
     165deg,
-    $white 0%,
-    lighten($pink, 2%) 35%,
-    $light-pink 70%,
-    rgba($purple, 0.06) 100%
+    rgba($white, 0.96) 0%,
+    rgba($pink, 0.92) 30%,
+    rgba($light-pink, 0.88) 60%,
+    rgba($purple, 0.09) 100%
+  );
+}
+
+/* форма — чуть более насыщенный фон */
+.form .page-atmosphere__bg,
+.form--atmosphere .page-atmosphere__bg {
+  background: linear-gradient(
+    145deg,
+    rgba($pink, 0.55) 0%,
+    rgba($light-pink, 0.72) 40%,
+    rgba($purple, 0.13) 100%
   );
 }
 
@@ -382,29 +397,29 @@ body:has(.header) {
   animation: atmosphere-shift 18s ease-in-out infinite;
 
   &--1 {
-    width: min(55vw, 480px);
-    height: min(55vw, 480px);
+    width: min(55vw, 500px);
+    height: min(55vw, 500px);
     top: -8%;
     right: -10%;
-    background: radial-gradient(circle, rgba($purple, 0.22) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba($purple, 0.28) 0%, transparent 70%);
     animation-delay: -4s;
   }
 
   &--2 {
-    width: min(50vw, 420px);
-    height: min(50vw, 420px);
+    width: min(50vw, 440px);
+    height: min(50vw, 440px);
     bottom: 10%;
     left: -12%;
-    background: radial-gradient(circle, rgba($purple, 0.14) 0%, transparent 68%);
+    background: radial-gradient(circle, rgba($purple, 0.2) 0%, transparent 68%);
     animation-delay: -9s;
   }
 
   &--3 {
-    width: min(40vw, 320px);
-    height: min(40vw, 320px);
+    width: min(42vw, 340px);
+    height: min(42vw, 340px);
     top: 40%;
     left: 30%;
-    background: radial-gradient(circle, rgba($pink, 0.5) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba($pink, 0.65) 0%, transparent 65%);
     animation: atmosphere-float 22s ease-in-out infinite;
     filter: blur(50px);
   }
