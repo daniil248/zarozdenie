@@ -6,6 +6,7 @@
       <div class="page-atmosphere__orb page-atmosphere__orb--3" />
     </div>
     <BackgroundDots />
+    <TheHeader />
     <div class="form__content">
     <div class="container">
       <div class="form__wrapper">

@@ -4,12 +4,12 @@
 
 .form {
   background: transparent;
-  padding: 84px 0;
+  padding: 48px 0 84px;
   position: relative;
   min-height: 100vh;
 
   @media (max-width:660px) {
-    padding: 40px 0;
+    padding: 24px 0 48px;
   }
 
   &--atmosphere {
@@ -129,12 +129,17 @@
       background-clip: text;
 
       @media (max-width:960px) {
-        font-size: 32px;
+        font-size: 30px;
         padding-bottom: 14px;
       }
 
       @media (max-width:660px) {
-        font-size: 26px;
+        font-size: 24px;
+        padding-bottom: 10px;
+      }
+
+      @media (max-width:480px) {
+        font-size: 20px;
       }
     }
 
@@ -148,6 +153,11 @@
       @media (max-width:960px) {
         font-size: 15px;
         line-height: 22px;
+      }
+
+      @media (max-width:480px) {
+        font-size: 14px;
+        line-height: 20px;
       }
     }
 
@@ -230,6 +240,10 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: flex-start;
+
+      @media (max-width: 660px) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -279,48 +293,51 @@
     margin-bottom: 20px;
     position: relative;
 
-    @media (max-width:1280px) {
+    @media (max-width:960px) {
       width: 100%;
     }
 
-    /* ---- inputs & textareas use Playfair Display ---- */
+    /* ---- FormKit generated input class ---- */
+    .formkit-input,
     input,
     textarea {
       width: 100%;
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 17px;
-      font-weight: 400;
+      font-family: 'Montserrat', -apple-system, sans-serif !important;
+      font-size: 15px !important;
+      font-weight: 500 !important;
       line-height: 1.5;
       border-radius: 14px;
-      padding: 18px 56px 18px 22px;
+      padding: 16px 52px 16px 18px;
       box-sizing: border-box;
-      border: 1.5px solid rgba($purple, 0.22);
-      color: $black;
-      background: rgba($white, 0.85);
+      border: 1.5px solid rgba($purple, 0.28);
+      color: rgba($black, 0.88) !important;
+      background: rgba($white, 0.92);
       transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       outline: none;
       -webkit-appearance: none;
 
       &::placeholder {
-        font-family: 'Playfair Display', Georgia, serif;
-        font-style: italic;
-        color: rgba($black, 0.38);
-        font-size: 15px;
+        font-family: 'Montserrat', sans-serif !important;
+        font-style: normal !important;
+        color: rgba($black, 0.42) !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
       }
 
       &:focus {
         border-color: $purple;
-        box-shadow: 0 0 0 3px rgba($purple, 0.12);
+        box-shadow: 0 0 0 3px rgba($purple, 0.13);
         background: $white;
       }
 
       @media (max-width:660px) {
-        font-size: 15px;
-        padding: 15px 48px 15px 16px;
+        font-size: 14px !important;
+        padding: 14px 44px 14px 14px;
       }
     }
 
-    textarea {
+    textarea,
+    textarea.formkit-input {
       height: 130px;
       resize: none;
       padding-right: 22px;
@@ -330,17 +347,18 @@
       }
     }
 
-    label {
+    label,
+    .formkit-label {
       margin-bottom: 10px;
       display: block;
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 16px;
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 16px !important;
       font-weight: 500;
       line-height: 1.4;
       color: rgba($black, 0.82);
 
       @media (max-width:660px) {
-        font-size: 14px;
+        font-size: 14px !important;
       }
     }
   }

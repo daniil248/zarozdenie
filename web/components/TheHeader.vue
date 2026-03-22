@@ -76,6 +76,7 @@
         <a :href="anchor('services')" class="header__mobile-link" @click="closeMobileMenu">{{ $t('Услуги') }}</a>
         <a :href="anchor('conditions')" class="header__mobile-link" @click="closeMobileMenu">{{ $t('Наши ценности') }}</a>
         <a :href="anchor('contacts')" class="header__mobile-link" @click="closeMobileMenu">{{ $t('Контакты') }}</a>
+        <NuxtLink :to="localePath('/auth/form')" class="header__mobile-link header__mobile-link--cta" @click="closeMobileMenu">{{ $t('Заполнить анкету') }}</NuxtLink>
       </div>
     </div>
 

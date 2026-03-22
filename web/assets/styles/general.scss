@@ -4,6 +4,8 @@ html {
   padding: 0;
   /* Совпадает с верхом шапки — убирает «белую щель» между chrome и страницей */
   background-color: #7a2fb2;
+  /* Запрет горизонтального скролла на мобилках при зуме/свайпе */
+  overflow-x: hidden;
 }
 
 #__nuxt {
@@ -29,6 +31,7 @@ html:has(.header) {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   font-weight: 500;
   color: $text;
@@ -306,7 +309,8 @@ body:has(.header) {
 
 .page-atmosphere {
   position: relative;
-  isolation: isolate;
+  /* isolation: isolate убран — он создавал stacking context,
+     который "захватывал" position:fixed заголовок и скрывал его */
 }
 
 .background-dots {
@@ -341,12 +345,22 @@ body:has(.header) {
   pointer-events: none;
   overflow: hidden;
   background: linear-gradient(
-    165deg,
-    rgba($white, 0.96) 0%,
-    rgba($pink, 0.92) 30%,
-    rgba($light-pink, 0.88) 60%,
-    rgba($purple, 0.09) 100%
+    155deg,
+    rgba($white, 0.97) 0%,
+    rgba($pink, 0.88) 28%,
+    rgba($light-pink, 0.82) 58%,
+    rgba($purple, 0.12) 100%
   );
+
+  /* точечный паттерн — даёт текстуру без тяжести */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba($purple, 0.09) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+    pointer-events: none;
+  }
 }
 
 /* форма — чуть более насыщенный фон */
@@ -397,29 +411,29 @@ body:has(.header) {
   animation: atmosphere-shift 18s ease-in-out infinite;
 
   &--1 {
-    width: min(55vw, 500px);
-    height: min(55vw, 500px);
-    top: -8%;
-    right: -10%;
-    background: radial-gradient(circle, rgba($purple, 0.28) 0%, transparent 70%);
+    width: min(60vw, 560px);
+    height: min(60vw, 560px);
+    top: -10%;
+    right: -12%;
+    background: radial-gradient(circle, rgba($purple, 0.36) 0%, transparent 70%);
     animation-delay: -4s;
   }
 
   &--2 {
-    width: min(50vw, 440px);
-    height: min(50vw, 440px);
-    bottom: 10%;
-    left: -12%;
-    background: radial-gradient(circle, rgba($purple, 0.2) 0%, transparent 68%);
+    width: min(55vw, 500px);
+    height: min(55vw, 500px);
+    bottom: 8%;
+    left: -14%;
+    background: radial-gradient(circle, rgba($purple, 0.28) 0%, transparent 68%);
     animation-delay: -9s;
   }
 
   &--3 {
-    width: min(42vw, 340px);
-    height: min(42vw, 340px);
-    top: 40%;
-    left: 30%;
-    background: radial-gradient(circle, rgba($pink, 0.65) 0%, transparent 65%);
+    width: min(46vw, 380px);
+    height: min(46vw, 380px);
+    top: 38%;
+    left: 28%;
+    background: radial-gradient(circle, rgba($pink, 0.72) 0%, transparent 65%);
     animation: atmosphere-float 22s ease-in-out infinite;
     filter: blur(50px);
   }

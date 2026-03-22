@@ -2,15 +2,50 @@
   padding: 72px 0;
   box-sizing: border-box;
   margin-top: 72px;
-  background: linear-gradient(135deg, rgba($pink, 0.75) 0%, rgba($light-pink, 0.7) 100%);
+  background: linear-gradient(135deg, rgba($pink, 0.88) 0%, rgba($light-pink, 0.78) 45%, rgba($purple, 0.14) 100%);
   backdrop-filter: blur(6px);
   text-align: center;
   border-radius: 24px;
-  border: 1px solid rgba($purple, 0.12);
-  box-shadow: 0 10px 40px rgba($purple, 0.07);
+  border: 1px solid rgba($purple, 0.14);
+  box-shadow: 0 12px 48px rgba($purple, 0.1);
   max-width: calc(100% - 32px);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  overflow: hidden;
+
+  /* декоративный орб — правый верхний */
+  &::before {
+    content: '';
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba($purple, 0.18) 0%, transparent 65%);
+    top: -160px;
+    right: -100px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* декоративный орб — левый нижний */
+  &::after {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba($white, 0.22) 0%, transparent 65%);
+    bottom: -80px;
+    left: -60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
   @media (min-width: 1280px) {
     max-width: 1168px;
@@ -27,20 +62,22 @@
     }
 
     div {
-      color: $black;
-      background-color: $light-pink;
-      padding: 16px 86px;
+      color: rgba($black, 0.7);
+      background-color: rgba($white, 0.55);
+      backdrop-filter: blur(8px);
+      padding: 14px 80px;
       font-size: 18px;
       font-weight: 500;
       line-height: 24px;
       cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
 
       &:first-child {
-        border-radius: 12px 0px 0px 12px;
+        border-radius: 14px 0px 0px 14px;
       }
 
       &:last-child {
-        border-radius: 0px 12px 12px 0px;
+        border-radius: 0px 14px 14px 0px;
       }
 
       @media (max-width:1280px) {
@@ -48,21 +85,31 @@
       }
 
       @media (max-width:660px) {
-        padding: 12px 40px;
+        padding: 12px 36px;
         font-size: 16px;
         line-height: 22px;
       }
 
       @media (max-width:480px) {
-        padding: 12px 30px;
+        padding: 12px 28px;
+      }
+
+      @media (max-width:360px) {
+        padding: 10px 18px;
+        font-size: 14px;
       }
 
       &.active {
         background-color: $purple;
         color: $white;
         cursor: default;
+        box-shadow: 0 4px 16px rgba($purple, 0.4);
       }
     }
+  }
+
+  h2.title {
+    color: rgba($black, 0.85);
   }
 
   p {
@@ -70,6 +117,7 @@
     padding-top: 32px;
     max-width: 660px;
     margin: 0 auto;
+    color: rgba($black, 0.72);
 
     @media (max-width:960px) {
       padding: 14px 0;
@@ -90,24 +138,23 @@
       color: $purple;
       border-radius: 56px;
       border: 2px solid $purple;
-      padding: 22px 60px;
+      padding: 18px 56px;
       transition: $tr;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 24px;
 
       @media (max-width:960px) {
-        padding: 16px 40px;
-        font-size: 18px;
+        padding: 14px 36px;
+        font-size: 16px;
       }
 
       @media (max-width:660px) {
-        font-size: 16px;
-        padding: 10px 30px;
-        width: 60%;
+        font-size: 15px;
+        padding: 12px 28px;
+        width: 70%;
+        text-align: center;
       }
-
-
 
       &:hover {
         background-color: darken($purple, 10);
@@ -116,9 +163,10 @@
       }
 
       &:first-child {
-        margin-right: 24px;
+        margin-right: 20px;
         background-color: $purple;
         color: $white;
+        box-shadow: 0 6px 20px rgba($purple, 0.38);
 
         @media (max-width:660px) {
           margin-right: 0;
