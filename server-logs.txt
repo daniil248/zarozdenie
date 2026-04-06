@@ -1,0 +1,1780 @@
+=== CONTAINER: api ===
+    },
+    method: 'post',
+    url: 'https://api.telegram.org/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+    data: '{"chat_id":"-1002058569607","parse_mode":"html","text":"Зарегистрировался новый клиент\\nИмя: Назым\\nНомер: +7-707-171-16-81\\nПроверьте в панели администратора!!"}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: '233',
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.telegram.org',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.telegram.org',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 5162,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 60,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'POST /bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/1.6.2\r\n' +
+      'Content-Length: 233\r\n' +
+      'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+      'Host: api.telegram.org\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype],
+      freeSockets: [Object: null prototype] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 401,
+      statusMessage: 'Unauthorized',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.telegram.org/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 16,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.telegram.org',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 233,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.telegram.org/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      'accept-encoding': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: Object [AxiosHeaders] {
+      server: 'nginx/1.18.0',
+      date: 'Sun, 05 Apr 2026 13:24:52 GMT',
+      'content-type': 'application/json',
+      'content-length': '58',
+      connection: 'close',
+      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+      'access-control-allow-origin': '*',
+      'access-control-expose-headers': 'Content-Length,Content-Type,Date,Server,Connection'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.telegram.org/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+      data: '{"chat_id":"-1002058569607","parse_mode":"html","text":"Зарегистрировался новый клиент\\nИмя: Назым\\nНомер: +7-707-171-16-81\\nПроверьте в панели администратора!!"}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '233',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'POST /bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/1.6.2\r\n' +
+        'Content-Length: 233\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.telegram.org\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/bot6473213361:AAE72qQF8tT_oFLvzLCE8uGcrXgHF1S0hok/sendMessage',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.telegram.org',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { ok: false, error_code: 401, description: 'Unauthorized' }
+  }
+}
+=== CONTAINER: web ===
+
+> preview
+> nuxt preview
+
+
+ ╭───────────────────────────────────Preview Mode─────────────────────────────────────╮
+ │                                                                                    │
+ │  You are running Nuxt production build in preview mode.                            │
+ │  For production deployments, please directly use node ./server/index.mjs command.  │
+ │                                                                                    │
+ │  Node.js:           v18.18.2                                                       │
+ │  Nitro Preset:      node-server                                                    │
+ │  Working directory: .output                                                        │
+ │                                                                                    │
+ ╰────────────────────────────────────────────────────────────────────────────────────╯
+
+ℹ Loading .env. This will not be loaded when running the server in production.
+ℹ Starting preview command: node ./server/index.mjs
+
+Listening on http://[::]:3000
+=== CONTAINER: mtproxy ===
+####
+#### Telegram Proxy
+####
+
+[+] No secret passed. Will generate 1 random ones.
+[*] Final configuration:
+[*]   Secret 1: b20e8b62a1446271fb51439ecca0fefc
+[*]   tg:// link for secret 1 auto configuration: tg://proxy?server=92.51.44.138&port=443&secret=b20e8b62a1446271fb51439ecca0fefc
+[*]   t.me link for secret 1: https://t.me/proxy?server=92.51.44.138&port=443&secret=b20e8b62a1446271fb51439ecca0fefc
+[*]   Tag: no tag
+[*]   External IP: 92.51.44.138
+[*]   Make sure to fix the links in case you run the proxy on a different port.
+
+[+] Starting proxy...
+[7][2026-03-31 17:21:21.475109 local] Invoking engine mtproxy-0.01 compiled at Feb 28 2020 12:17:45 by gcc 4.9.2 64-bit after commit dc0c7f3de40530053189c572936ae4fd1567269b
+[7][2026-03-31 17:21:21.475986 local] config_filename = '/etc/telegram/backend.conf'
+[7][2026-03-31 17:21:21.476307 local] creating 2 workers
+[7][2026-03-31 17:21:21.478153 local] Started as [172.17.0.3:2398:7:1774977681]
+[7][2026-03-31 17:21:21.478381 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[7][2026-03-31 17:21:21.478414 local] main loop
+[42][2026-03-31 17:21:21.478973 local] Started as [172.17.0.3:2398:42:1774977681]
+[42][2026-03-31 17:21:21.479375 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[42][2026-03-31 17:21:21.479554 local] main loop
+[43][2026-03-31 17:21:21.482741 local] Started as [172.17.0.3:2398:43:1774977681]
+[43][2026-03-31 17:21:21.483002 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[43][2026-03-31 17:21:21.483067 local] main loop
+####
+#### Telegram Proxy
+####
+
+[+] Using the secret in /data/secret: 'b20e8b62a1446271fb51439ecca0fefc'.
+[*] Final configuration:
+[*]   Secret 1: b20e8b62a1446271fb51439ecca0fefc
+[*]   tg:// link for secret 1 auto configuration: tg://proxy?server=92.51.44.138&port=443&secret=b20e8b62a1446271fb51439ecca0fefc
+[*]   t.me link for secret 1: https://t.me/proxy?server=92.51.44.138&port=443&secret=b20e8b62a1446271fb51439ecca0fefc
+[*]   Tag: no tag
+[*]   External IP: 92.51.44.138
+[*]   Make sure to fix the links in case you run the proxy on a different port.
+
+[+] Starting proxy...
+[7][2026-04-02 16:07:10.164638 local] Invoking engine mtproxy-0.01 compiled at Feb 28 2020 12:17:45 by gcc 4.9.2 64-bit after commit dc0c7f3de40530053189c572936ae4fd1567269b
+[7][2026-04-02 16:07:10.165038 local] config_filename = '/etc/telegram/backend.conf'
+[7][2026-04-02 16:07:10.165738 local] creating 2 workers
+[7][2026-04-02 16:07:10.172819 local] Started as [172.17.0.3:2398:7:1775146030]
+[7][2026-04-02 16:07:10.173079 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[7][2026-04-02 16:07:10.173106 local] main loop
+[37][2026-04-02 16:07:10.174829 local] Started as [172.17.0.3:2398:37:1775146030]
+[37][2026-04-02 16:07:10.175087 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[37][2026-04-02 16:07:10.175142 local] main loop
+[36][2026-04-02 16:07:10.348102 local] Started as [172.17.0.3:2398:36:1775146030]
+[36][2026-04-02 16:07:10.348451 local] configuration file /etc/telegram/backend.conf re-read successfully (821 bytes parsed), new configuration active
+[36][2026-04-02 16:07:10.348570 local] main loop
+=== CONTAINER: postgres ===
+2026-03-27 22:30:20.989 UTC [23410] FATAL:  password authentication failed for user "pgg_superadmins"
+2026-03-27 22:30:20.989 UTC [23410] DETAIL:  Role "pgg_superadmins" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:31:10.911 UTC [23412] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:31:10.911 UTC [23412] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:31:47.524 UTC [23416] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:31:47.524 UTC [23416] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:32:41.617 UTC [23418] FATAL:  password authentication failed for user "postgres.your-tenant-id"
+2026-03-27 22:32:41.617 UTC [23418] DETAIL:  Role "postgres.your-tenant-id" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:33:00.368 UTC [23423] FATAL:  password authentication failed for user "postgres.your-tenant-id"
+2026-03-27 22:33:00.368 UTC [23423] DETAIL:  Role "postgres.your-tenant-id" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:33:54.817 UTC [23425] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:33:54.817 UTC [23425] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:34:13.638 UTC [23428] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:34:13.638 UTC [23428] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:35:06.151 UTC [23430] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:35:06.151 UTC [23430] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:35:41.681 UTC [23434] FATAL:  password authentication failed for user "postgres"
+2026-03-27 22:35:41.681 UTC [23434] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:36:16.145 UTC [23437] FATAL:  password authentication failed for user "airflow"
+2026-03-27 22:36:16.145 UTC [23437] DETAIL:  Role "airflow" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:36:33.210 UTC [23439] FATAL:  password authentication failed for user "airflow"
+2026-03-27 22:36:33.210 UTC [23439] DETAIL:  Role "airflow" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:37:06.683 UTC [23442] FATAL:  password authentication failed for user "airflow"
+2026-03-27 22:37:06.683 UTC [23442] DETAIL:  Role "airflow" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:37:39.755 UTC [23444] FATAL:  password authentication failed for user "airflow"
+2026-03-27 22:37:39.755 UTC [23444] DETAIL:  Role "airflow" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-27 22:51:15.842 UTC [23487] FATAL:  expected SASL response, got message type 0
+2026-03-28 00:43:38.442 UTC [23821] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:43:38.442 UTC [23821] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:43:39.445 UTC [23825] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:43:39.445 UTC [23825] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:44:41.274 UTC [23829] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:44:41.274 UTC [23829] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:45:43.588 UTC [23832] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:45:43.588 UTC [23832] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:46:00.852 UTC [23835] FATAL:  password authentication failed for user "pgg_superadmins"
+2026-03-28 00:46:00.852 UTC [23835] DETAIL:  Role "pgg_superadmins" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:46:52.771 UTC [23838] FATAL:  password authentication failed for user "pgg_superadmins"
+2026-03-28 00:46:52.771 UTC [23838] DETAIL:  Role "pgg_superadmins" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:48:04.713 UTC [23842] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:48:04.713 UTC [23842] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:48:23.709 UTC [23846] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:48:23.709 UTC [23846] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:49:18.293 UTC [23847] FATAL:  password authentication failed for user "postgres.your-tenant-id"
+2026-03-28 00:49:18.293 UTC [23847] DETAIL:  Role "postgres.your-tenant-id" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:49:37.278 UTC [23851] FATAL:  password authentication failed for user "postgres.your-tenant-id"
+2026-03-28 00:49:37.278 UTC [23851] DETAIL:  Role "postgres.your-tenant-id" does not exist.
+	Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:50:33.119 UTC [23852] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:50:33.119 UTC [23852] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:51:10.255 UTC [23856] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:51:10.255 UTC [23856] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:51:29.678 UTC [23860] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:51:29.678 UTC [23860] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 00:51:48.852 UTC [23862] FATAL:  password authentication failed for user "postgres"
+2026-03-28 00:51:48.852 UTC [23862] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-03-28 07:13:01.608 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:13:01.936 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.309 s, sync=0.005 s, total=0.333 s; sync files=4, longest=0.004 s, average=0.002 s; distance=8 kB, estimate=68 kB; lsn=0/1A6B328, redo lsn=0/1A6B2F0
+2026-03-28 07:23:02.139 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:23:02.460 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.309 s, sync=0.003 s, total=0.325 s; sync files=4, longest=0.002 s, average=0.001 s; distance=6 kB, estimate=62 kB; lsn=0/1A6CEC8, redo lsn=0/1A6CE90
+2026-03-28 07:28:02.552 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:28:02.870 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.002 s, total=0.321 s; sync files=4, longest=0.002 s, average=0.001 s; distance=8 kB, estimate=57 kB; lsn=0/1A6EEF0, redo lsn=0/1A6EEB8
+2026-03-28 07:33:02.974 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:33:03.391 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.406 s, sync=0.002 s, total=0.418 s; sync files=4, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=52 kB; lsn=0/1A713A0, redo lsn=0/1A71368
+2026-03-28 07:43:02.590 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:43:03.024 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.409 s, sync=0.005 s, total=0.437 s; sync files=4, longest=0.004 s, average=0.002 s; distance=11 kB, estimate=48 kB; lsn=0/1A74258, redo lsn=0/1A74220
+2026-03-28 07:48:02.128 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:48:02.349 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.206 s, sync=0.002 s, total=0.223 s; sync files=1, longest=0.002 s, average=0.002 s; distance=3 kB, estimate=43 kB; lsn=0/1A75238, redo lsn=0/1A75200
+2026-03-28 07:58:02.548 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 07:58:02.873 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.003 s, total=0.329 s; sync files=4, longest=0.002 s, average=0.001 s; distance=6 kB, estimate=40 kB; lsn=0/1A76DE8, redo lsn=0/1A76DB0
+2026-03-28 11:37:43.645 UTC [25816] FATAL:  unsupported frontend protocol 2.0: server supports 3.0 to 3.0
+2026-03-28 11:37:44.397 UTC [25817] LOG:  could not receive data from client: Connection reset by peer
+2026-03-28 11:37:44.939 UTC [25818] LOG:  could not receive data from client: Connection reset by peer
+2026-03-28 11:37:52.606 UTC [25819] LOG:  could not receive data from client: Connection reset by peer
+2026-03-28 11:37:52.913 UTC [25820] LOG:  invalid length of startup packet
+2026-03-28 11:37:56.342 UTC [25821] LOG:  invalid length of startup packet
+2026-03-28 11:37:57.623 UTC [25822] LOG:  invalid length of startup packet
+2026-03-28 11:38:07.024 UTC [25824] LOG:  invalid length of startup packet
+2026-03-28 11:38:11.300 UTC [25825] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-28 11:38:12.957 UTC [25826] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-28 11:38:14.079 UTC [25827] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-28 11:39:06.869 UTC [25831] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-28 11:39:08.037 UTC [25832] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-28 11:39:10.525 UTC [25833] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-28 11:58:07.569 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 11:58:07.993 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.409 s, sync=0.002 s, total=0.427 s; sync files=4, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=37 kB; lsn=0/1A79480, redo lsn=0/1A79448
+2026-03-28 12:03:08.098 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 12:03:08.427 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.311 s, sync=0.004 s, total=0.332 s; sync files=4, longest=0.003 s, average=0.001 s; distance=6 kB, estimate=34 kB; lsn=0/1A7ADD0, redo lsn=0/1A7AD98
+2026-03-28 12:23:08.827 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 12:23:09.157 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.309 s, sync=0.004 s, total=0.333 s; sync files=4, longest=0.003 s, average=0.001 s; distance=6 kB, estimate=31 kB; lsn=0/1A7C6F0, redo lsn=0/1A7C6B8
+2026-03-28 12:38:08.435 UTC [27] LOG:  checkpoint starting: time
+2026-03-28 12:38:08.756 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.003 s, total=0.325 s; sync files=2, longest=0.002 s, average=0.002 s; distance=3 kB, estimate=28 kB; lsn=0/1A7D420, redo lsn=0/1A7D3E8
+2026-03-28 16:44:53.906 UTC [26762] LOG:  invalid length of startup packet
+2026-03-28 16:45:09.108 UTC [26763] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-28 16:53:07.382 UTC [26789] LOG:  invalid length of startup packet
+2026-03-28 16:53:08.091 UTC [26791] LOG:  invalid length of startup packet
+2026-03-28 16:53:09.608 UTC [26792] LOG:  invalid length of startup packet
+2026-03-28 16:53:10.363 UTC [26793] LOG:  invalid length of startup packet
+2026-03-28 16:53:11.115 UTC [26794] LOG:  invalid length of startup packet
+2026-03-28 16:53:11.845 UTC [26795] LOG:  invalid length of startup packet
+2026-03-28 16:53:12.459 UTC [26796] LOG:  invalid length of startup packet
+2026-03-28 16:53:13.049 UTC [26797] LOG:  invalid length of startup packet
+2026-03-28 16:53:14.633 UTC [26798] LOG:  invalid length of startup packet
+2026-03-28 16:53:16.144 UTC [26799] LOG:  invalid length of startup packet
+2026-03-28 16:53:17.691 UTC [26800] LOG:  invalid length of startup packet
+2026-03-28 16:53:18.264 UTC [26801] FATAL:  unsupported frontend protocol 27265.28208: server supports 3.0 to 3.0
+2026-03-28 16:53:21.253 UTC [26802] FATAL:  unsupported frontend protocol 65363.19778: server supports 3.0 to 3.0
+2026-03-28 16:53:39.077 UTC [26805] LOG:  invalid length of startup packet
+2026-03-28 16:53:40.797 UTC [26806] LOG:  invalid length of startup packet
+2026-03-28 16:53:44.740 UTC [26808] LOG:  invalid length of startup packet
+2026-03-28 16:53:45.295 UTC [26809] LOG:  invalid length of startup packet
+2026-03-28 16:53:46.010 UTC [26810] LOG:  invalid length of startup packet
+2026-03-28 23:36:51.434 UTC [28020] FATAL:  expected SASL response, got message type 0
+2026-03-29 11:22:14.552 UTC [30139] FATAL:  unsupported frontend protocol 2.0: server supports 3.0 to 3.0
+2026-03-29 11:22:14.644 UTC [30140] LOG:  could not receive data from client: Connection reset by peer
+2026-03-29 11:22:14.654 UTC [30141] LOG:  could not receive data from client: Connection reset by peer
+2026-03-29 11:22:24.554 UTC [30142] LOG:  could not receive data from client: Connection reset by peer
+2026-03-29 11:22:24.566 UTC [30143] LOG:  invalid length of startup packet
+2026-03-29 11:22:27.877 UTC [30145] LOG:  invalid length of startup packet
+2026-03-29 11:22:27.917 UTC [30146] LOG:  invalid length of startup packet
+2026-03-29 11:22:38.130 UTC [30147] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-29 11:22:38.180 UTC [30148] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-29 11:22:38.217 UTC [30149] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-29 11:49:37.773 UTC [30231] LOG:  invalid length of startup packet
+2026-03-29 11:49:37.852 UTC [30232] LOG:  invalid length of startup packet
+2026-03-30 00:27:07.263 UTC [32509] FATAL:  expected SASL response, got message type 0
+2026-03-30 10:01:53.549 UTC [34233] LOG:  invalid length of startup packet
+2026-03-30 10:01:56.851 UTC [34234] LOG:  invalid length of startup packet
+2026-03-30 11:14:02.836 UTC [27] LOG:  checkpoint starting: time
+2026-03-30 11:14:03.280 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.420 s, sync=0.007 s, total=0.447 s; sync files=5, longest=0.005 s, average=0.002 s; distance=14 kB, estimate=27 kB; lsn=0/1A80ED0, redo lsn=0/1A80E98
+2026-03-30 11:29:02.588 UTC [27] LOG:  checkpoint starting: time
+2026-03-30 11:29:02.713 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.003 s, total=0.130 s; sync files=2, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=24 kB; lsn=0/1A81690, redo lsn=0/1A81658
+2026-03-30 11:33:59.037 UTC [34519] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-30 11:54:03.232 UTC [27] LOG:  checkpoint starting: time
+2026-03-30 11:54:03.763 UTC [27] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.510 s, sync=0.004 s, total=0.534 s; sync files=6, longest=0.003 s, average=0.001 s; distance=19 kB, estimate=24 kB; lsn=0/1A864B0, redo lsn=0/1A86478
+2026-03-30 12:07:07.816 UTC [34624] FATAL:  unsupported frontend protocol 2.0: server supports 3.0 to 3.0
+2026-03-30 12:07:09.570 UTC [34626] LOG:  could not receive data from client: Connection reset by peer
+2026-03-30 12:07:11.318 UTC [34627] LOG:  could not receive data from client: Connection reset by peer
+2026-03-30 12:07:40.827 UTC [34632] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-30 12:07:43.480 UTC [34633] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-30 12:07:45.845 UTC [34634] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-30 17:44:21.909 UTC [35648] LOG:  invalid length of startup packet
+2026-03-30 17:44:22.734 UTC [35649] LOG:  invalid length of startup packet
+2026-03-31 01:17:53.976 UTC [36998] FATAL:  expected SASL response, got message type 0
+2026-03-31 09:29:29.027 UTC [27] LOG:  checkpoint starting: time
+2026-03-31 09:29:29.250 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.209 s, sync=0.003 s, total=0.227 s; sync files=3, longest=0.003 s, average=0.001 s; distance=2 kB, estimate=21 kB; lsn=0/1A86D90, redo lsn=0/1A86D58
+2026-03-31 09:34:29.357 UTC [27] LOG:  checkpoint starting: time
+2026-03-31 09:34:29.479 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.003 s, total=0.125 s; sync files=2, longest=0.003 s, average=0.002 s; distance=2 kB, estimate=19 kB; lsn=0/1A87800, redo lsn=0/1A877C8
+2026-03-31 12:21:10.311 UTC [38989] FATAL:  unsupported frontend protocol 2.0: server supports 3.0 to 3.0
+2026-03-31 12:21:10.987 UTC [38990] LOG:  could not receive data from client: Connection reset by peer
+2026-03-31 12:21:11.226 UTC [38991] LOG:  could not receive data from client: Connection reset by peer
+2026-03-31 12:21:18.298 UTC [38993] LOG:  could not receive data from client: Connection reset by peer
+2026-03-31 12:21:18.558 UTC [38994] LOG:  invalid length of startup packet
+2026-03-31 12:21:23.405 UTC [38995] LOG:  invalid length of startup packet
+2026-03-31 12:21:23.939 UTC [38996] LOG:  invalid length of startup packet
+2026-03-31 12:21:38.757 UTC [38997] LOG:  invalid length of startup packet
+2026-03-31 12:21:46.433 UTC [38999] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-31 12:21:47.162 UTC [39000] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-31 12:21:48.237 UTC [39001] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-31 12:30:55.276 UTC [39030] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-03-31 12:30:56.397 UTC [39031] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-03-31 12:30:57.132 UTC [39032] FATAL:  no PostgreSQL user name specified in startup packet
+2026-03-31 15:44:44.838 UTC [39613] LOG:  invalid length of startup packet
+2026-03-31 15:45:00.120 UTC [39615] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-01 02:17:06.236 UTC [41514] FATAL:  expected SASL response, got message type 0
+2026-04-01 13:10:00.527 UTC [27] LOG:  checkpoint starting: time
+2026-04-01 13:10:00.652 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.108 s, sync=0.003 s, total=0.131 s; sync files=2, longest=0.003 s, average=0.002 s; distance=2 kB, estimate=18 kB; lsn=0/1A883E0, redo lsn=0/1A883A8
+2026-04-01 13:41:40.594 UTC [43568] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-01 13:41:44.004 UTC [43569] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-01 13:41:47.174 UTC [43571] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-01 16:22:09.735 UTC [44045] LOG:  invalid length of startup packet
+2026-04-01 18:27:04.527 UTC [44421] FATAL:  unsupported frontend protocol 2.0: server supports 3.0 to 3.0
+2026-04-01 18:27:09.499 UTC [44422] LOG:  could not receive data from client: Connection reset by peer
+2026-04-01 18:27:10.283 UTC [44423] LOG:  could not receive data from client: Connection reset by peer
+2026-04-01 18:27:19.175 UTC [44425] LOG:  could not receive data from client: Connection reset by peer
+2026-04-01 18:27:19.509 UTC [44426] LOG:  invalid length of startup packet
+2026-04-01 18:27:35.277 UTC [44428] LOG:  invalid length of startup packet
+2026-04-01 18:27:40.588 UTC [44430] LOG:  invalid length of startup packet
+2026-04-01 18:27:46.792 UTC [44431] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-01 18:27:48.542 UTC [44432] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-01 18:27:50.124 UTC [44433] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-02 00:56:18.950 UTC [45597] LOG:  invalid length of startup packet
+2026-04-02 00:56:20.761 UTC [45599] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-02 00:56:20.956 UTC [45600] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-02 01:09:22.808 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 01:09:48.880 UTC [45627] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 02:03:02.025 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 02:03:17.285 UTC [45782] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 02:10:21.421 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 02:10:21.643 UTC [45796] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 03:19:37.229 UTC [45998] FATAL:  expected SASL response, got message type 0
+2026-04-02 04:04:43.496 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 04:04:43.599 UTC [46128] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 04:07:58.364 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 04:07:58.929 UTC [46132] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 04:12:36.591 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 04:13:07.995 UTC [46138] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 06:05:24.446 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 06:06:05.302 UTC [46462] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 06:09:39.527 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 06:09:40.760 UTC [46468] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 06:13:02.773 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 06:13:19.442 UTC [46473] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 07:06:19.650 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 07:06:53.387 UTC [46628] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 08:03:24.411 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 08:03:57.991 UTC [46792] WARNING:  autovacuum worker started without a worker entry
+2026-04-02 08:07:28.459 UTC [31] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-02 08:08:00.006 UTC [46797] WARNING:  autovacuum worker started without a worker entry
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-04-02 16:07:09.940 UTC [1] LOG:  starting PostgreSQL 16.13 (Debian 16.13-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-04-02 16:07:09.943 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-04-02 16:07:09.943 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-04-02 16:07:09.967 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-04-02 16:07:09.998 UTC [28] LOG:  database system was interrupted; last known up at 2026-04-01 13:10:00 UTC
+2026-04-02 16:07:10.287 UTC [28] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-04-02 16:07:10.309 UTC [28] LOG:  redo starts at 0/1A883A8
+2026-04-02 16:07:10.309 UTC [28] LOG:  invalid record length at 0/1A88490: expected at least 24, got 0
+2026-04-02 16:07:10.309 UTC [28] LOG:  redo done at 0/1A88458 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.01 s
+2026-04-02 16:07:10.328 UTC [26] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-04-02 16:07:10.355 UTC [26] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.008 s, total=0.030 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/1A88490, redo lsn=0/1A88490
+2026-04-02 16:07:10.422 UTC [1] LOG:  database system is ready to accept connections
+2026-04-02 16:07:33.690 UTC [32] LOG:  could not receive data from client: Connection reset by peer
+2026-04-02 18:35:13.872 UTC [185] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-02 18:35:16.218 UTC [186] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-02 18:35:16.749 UTC [187] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-03 04:32:12.100 UTC [785] FATAL:  expected SASL response, got message type 0
+2026-04-03 07:17:33.433 UTC [951] LOG:  could not receive data from client: Connection reset by peer
+2026-04-03 10:51:31.205 UTC [1179] LOG:  could not receive data from client: Connection reset by peer
+2026-04-03 10:51:32.066 UTC [1180] LOG:  invalid length of startup packet
+2026-04-03 14:47:25.770 UTC [1423] LOG:  invalid length of startup packet
+2026-04-03 14:47:27.319 UTC [1424] LOG:  invalid length of startup packet
+2026-04-03 14:47:28.043 UTC [1425] LOG:  invalid length of startup packet
+2026-04-03 14:47:31.768 UTC [1426] LOG:  invalid length of startup packet
+2026-04-03 14:47:32.354 UTC [1427] LOG:  invalid length of startup packet
+2026-04-03 14:47:32.918 UTC [1428] LOG:  invalid length of startup packet
+2026-04-03 14:47:37.482 UTC [1429] LOG:  invalid length of startup packet
+2026-04-03 14:47:38.210 UTC [1430] LOG:  invalid length of startup packet
+2026-04-03 14:47:38.918 UTC [1431] LOG:  invalid length of startup packet
+2026-04-03 14:47:39.492 UTC [1432] LOG:  invalid length of startup packet
+2026-04-03 14:47:40.235 UTC [1433] LOG:  invalid length of startup packet
+2026-04-03 14:47:40.818 UTC [1434] FATAL:  unsupported frontend protocol 27265.28208: server supports 3.0 to 3.0
+2026-04-03 14:47:41.386 UTC [1435] FATAL:  unsupported frontend protocol 65363.19778: server supports 3.0 to 3.0
+2026-04-03 14:48:23.450 UTC [1438] LOG:  invalid length of startup packet
+2026-04-03 14:48:24.196 UTC [1439] LOG:  invalid length of startup packet
+2026-04-03 14:48:30.277 UTC [1441] LOG:  invalid length of startup packet
+2026-04-03 14:48:31.728 UTC [1442] LOG:  invalid length of startup packet
+2026-04-03 14:48:32.327 UTC [1443] LOG:  invalid length of startup packet
+2026-04-03 17:21:35.131 UTC [1597] LOG:  invalid length of startup packet
+2026-04-03 17:21:50.264 UTC [1598] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-03 19:38:47.294 UTC [1737] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-03 19:38:48.961 UTC [1738] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-03 19:38:51.381 UTC [1739] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-03 20:24:15.565 UTC [1785] FATAL:  password authentication failed for user "postgres"
+2026-04-03 20:24:15.565 UTC [1785] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-04-03 20:24:38.332 UTC [1786] FATAL:  password authentication failed for user "postgres"
+2026-04-03 20:24:38.332 UTC [1786] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-04-03 20:25:31.841 UTC [1788] FATAL:  password authentication failed for user "postgres"
+2026-04-03 20:25:31.841 UTC [1788] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-04-03 20:26:10.205 UTC [1790] FATAL:  password authentication failed for user "postgres"
+2026-04-03 20:26:10.205 UTC [1790] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-04-03 20:27:12.511 UTC [1791] FATAL:  password authentication failed for user "postgres"
+2026-04-03 20:27:12.511 UTC [1791] DETAIL:  Connection matched file "/var/lib/postgresql/data/pg_hba.conf" line 128: "host all all all scram-sha-256"
+2026-04-04 05:16:58.118 UTC [2323] FATAL:  expected SASL response, got message type 0
+2026-04-04 06:35:54.558 UTC [2402] LOG:  incomplete startup packet
+2026-04-04 10:53:08.953 UTC [26] LOG:  checkpoint starting: time
+2026-04-04 10:53:09.284 UTC [26] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.310 s, sync=0.004 s, total=0.336 s; sync files=4, longest=0.003 s, average=0.001 s; distance=11 kB, estimate=11 kB; lsn=0/1A8B228, redo lsn=0/1A8B1F0
+2026-04-04 20:32:20.313 UTC [3240] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-04 20:32:21.110 UTC [3241] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-04 20:32:21.913 UTC [3242] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-05 05:57:42.530 UTC [3808] FATAL:  expected SASL response, got message type 0
+2026-04-05 09:49:45.800 UTC [4043] FATAL:  unsupported frontend protocol 65363.19778: server supports 3.0 to 3.0
+2026-04-05 09:49:45.835 UTC [4042] LOG:  could not receive data from client: Connection reset by peer
+2026-04-05 12:03:37.020 UTC [26] LOG:  checkpoint starting: time
+2026-04-05 12:03:37.552 UTC [26] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.510 s, sync=0.007 s, total=0.538 s; sync files=6, longest=0.007 s, average=0.002 s; distance=17 kB, estimate=17 kB; lsn=0/1A8F998, redo lsn=0/1A8F960
+2026-04-05 13:28:39.194 UTC [26] LOG:  checkpoint starting: time
+2026-04-05 13:28:39.620 UTC [26] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.408 s, sync=0.003 s, total=0.432 s; sync files=5, longest=0.003 s, average=0.001 s; distance=18 kB, estimate=18 kB; lsn=0/1A94210, redo lsn=0/1A941D8
+2026-04-05 17:31:57.859 UTC [4514] LOG:  invalid length of startup packet
+2026-04-05 17:31:57.877 UTC [4515] LOG:  invalid length of startup packet
+2026-04-05 21:35:10.432 UTC [4758] FATAL:  unsupported frontend protocol 0.0: server supports 3.0 to 3.0
+2026-04-05 21:35:10.996 UTC [4760] FATAL:  unsupported frontend protocol 255.255: server supports 3.0 to 3.0
+2026-04-05 21:35:11.354 UTC [4761] FATAL:  no PostgreSQL user name specified in startup packet
+2026-04-06 06:15:43.018 UTC [5281] LOG:  incomplete startup packet
+2026-04-06 06:51:48.285 UTC [5320] FATAL:  expected SASL response, got message type 0
+2026-04-06 07:14:00.435 UTC [26] LOG:  checkpoint starting: time
+2026-04-06 07:14:00.559 UTC [26] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.108 s, sync=0.003 s, total=0.128 s; sync files=2, longest=0.002 s, average=0.002 s; distance=3 kB, estimate=16 kB; lsn=0/1A95098, redo lsn=0/1A95060
+2026-04-06 07:37:43.591 UTC [5374] LOG:  invalid length of startup packet
+2026-04-06 07:37:44.142 UTC [5375] LOG:  invalid length of startup packet
+=== CONTAINER: sendpulse-bot ===
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.telegram.org/bot8000202949:AAEep2lan3hYANBfOLliFSvRkP8xUcs-7sk/getUpdates "HTTP/1.1 200 OK"
+=== CONTAINER: pinkish-bot ===
+Error while getting Updates: httpx.ConnectError: All connection attempts failed
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 67, in map_httpcore_exceptions
+    yield
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 371, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1559, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1646, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1674, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1711, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1748, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 370, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 84, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 715, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 618, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 542, in decorator
+    result = await func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4164, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 630, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 658, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+Error while getting Updates: httpx.ConnectError: All connection attempts failed
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 67, in map_httpcore_exceptions
+    yield
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 371, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1559, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1646, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1674, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1711, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1748, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 370, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 84, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 715, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 618, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 542, in decorator
+    result = await func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4164, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 630, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 658, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+Error while getting Updates: httpx.ConnectError: All connection attempts failed
+No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 67, in map_httpcore_exceptions
+    yield
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 371, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1559, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1646, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1674, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1711, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_client.py", line 1748, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 370, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/usr/local/lib/python3.11/site-packages/httpx/_transports/default.py", line 84, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 715, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 618, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 542, in decorator
+    result = await func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 4164, in get_updates
+    await self._post(
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 630, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 347, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/_bot.py", line 658, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/telegram/request/_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+=== CONTAINER: n8n-n8n-1 ===
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (execute)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (start)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (webhook)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (worker)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (export:credentials)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (export:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (import:credentials)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (import:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (ldap:reset)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (license:clear)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (license:info)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (list:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (mfa:disable)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (update:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (user-management:reset)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+ ›   Error: command start not found
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (audit)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (base-command)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (community-node)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (execute-batch)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (execute)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (start)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (webhook)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (worker)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (export:credentials)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (export:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (import:credentials)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (import:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (ldap:reset)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (license:clear)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (license:info)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (list:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (mfa:disable)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (update:workflow)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+(node:7) [EACCES] Warning: Error
+module: @oclif/core@4.0.7
+task: findCommand (user-management:reset)
+plugin: n8n
+root: /usr/local/lib/node_modules/n8n
+code: EACCES
+message: EACCES: permission denied, open '/home/node/.n8n/config'
+See more details with DEBUG=*
+ ›   Error: command start not found
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+No encryption key found - Auto-generating and saving to: /home/node/.n8n/config
+=== FILE: /root/.pm2/logs/jobgifts-app-out.log ===
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+Game crashed - Session: cmnmwaih40i2nq4k2kgoztj0a
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=false, gameTimer=false
+🎮 No game in progress, starting new game...
+🎮 Starting new game - Session: cmnmwaxwq0i2oq4k297p31jjx
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+Game crashed - Session: cmnmwaxwq0i2oq4k297p31jjx
+🔄 Game check interval: currentGame=false, gameTimer=false
+🎮 No game in progress, starting new game...
+🎮 Starting new game - Session: cmnmwb5mm0i2pq4k2bbbvju21
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+Game crashed - Session: cmnmwb5mm0i2pq4k2bbbvju21
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+🎮 Starting new game - Session: cmnmwbfym0i2qq4k22erq9tmw
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+Game crashed - Session: cmnmwbfym0i2qq4k22erq9tmw
+🔄 Game check interval: currentGame=false, gameTimer=false
+🎮 No game in progress, starting new game...
+🎮 Starting new game - Session: cmnmwbox40i2rq4k2qb9m3baw
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+Game crashed - Session: cmnmwbox40i2rq4k2qb9m3baw
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+🎮 Starting new game - Session: cmnmwc7ji0i2sq4k2wmx35zq0
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+Game crashed - Session: cmnmwc7ji0i2sq4k2wmx35zq0
+🎮 Starting new game - Session: cmnmwd2te0i2tq4k2plusod0z
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+Game crashed - Session: cmnmwd2te0i2tq4k2plusod0z
+🔄 Game check interval: currentGame=false, gameTimer=false
+🎮 No game in progress, starting new game...
+🎮 Starting new game - Session: cmnmwdatn0i2uq4k2l5u482vx
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+Game already in progress, skipping...
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
+Game crashed - Session: cmnmwdatn0i2uq4k2l5u482vx
+🔄 Game check interval: currentGame=false, gameTimer=false
+🎮 No game in progress, starting new game...
+🎮 Starting new game - Session: cmnmwdijd0i2vq4k2glbwdda8
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+Game already in progress, skipping...
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+Game crashed - Session: cmnmwdijd0i2vq4k2glbwdda8
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+🎮 Starting new game - Session: cmnmwdszz0i2wq4k2vy8ksidy
+⏰ Setting timer for game-flying in 5000ms (5 seconds)
+✅ game-start published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=true
+⏸️ Game already in progress, skipping...
+⏰ Timer fired! Starting game-flying phase...
+✅ Game session updated in DB
+✅ game-flying published to 1 subscribers
+🔄 Game check interval: currentGame=true, gameTimer=false
+⏸️ Game already in progress, skipping...
+TON deposit from EQB65QVsP9lAb5u758cInNTECAHZB1SGy-23zhLfEZ6s8aLF: user not found (wallet not connected or address mismatch)
+TON deposit from EQDfIgbVZ_G4ImIBt6R7SPrqChcerNgim6Qd_EREDpcLAdDq: user not found (wallet not connected or address mismatch)
+TON deposit from EQB0Pb0STr9wnjbFyXwWgMSZ6wXMnUxYvgESqGPWd0zOb62S: user not found (wallet not connected or address mismatch)
+TON deposit from EQBRIQRNgqtbUaAcwR5_x5OfQgZfJkk2GGZ9FNd1rKihZUrC: user not found (wallet not connected or address mismatch)
