@@ -40,10 +40,16 @@
           <NuxtLink :to="localePath('/auth/form')">{{ $t('Донор') }}</NuxtLink>
           <a href="#" class="active">{{ $t('Клиент') }}</a>
         </div>
-        <input type="text" v-model.trim="user.name" :placeholder="$t('Имя')">
-        <input type="text" v-model.trim="user.number" :placeholder="$t('Телефон')" v-maska data-maska="+#-###-###-##-##">
-        <input type="password" v-model.trim="user.password" :placeholder="$t('Пароль')">
-        <button @click="sendRegister" :class="block ? 'disable' : ''">{{ $t('Оставить заявку') }}</button>
+        <form @submit.prevent="sendRegister" autocomplete="on">
+          <input type="text" v-model.trim="user.name" :placeholder="$t('Имя')" name="name" autocomplete="name">
+          <input type="tel" v-model.trim="user.number" :placeholder="$t('Телефон')" v-maska data-maska="+#-###-###-##-##" name="username" autocomplete="username">
+          <input type="password" v-model.trim="user.password" :placeholder="$t('Пароль')" name="password" autocomplete="current-password">
+          <label class="login__remember">
+            <input type="checkbox" v-model="user.remember">
+            <span>{{ $t('Запомнить меня') }}</span>
+          </label>
+          <button type="submit" :class="block ? 'disable' : ''">{{ $t('Оставить заявку') }}</button>
+        </form>
       </div>
     </div>
   </div>
@@ -57,12 +63,15 @@ import { useUserStore } from '~/store/user';
 
 const i18n = useI18n();
 const localePath = useLocalePath()
-const user = ref({
-  name: '',
-  password: '',
-  number: ''
-})
 const userStore = useUserStore();
+
+const saved = userStore.getSavedLogin();
+const user = ref({
+  name: saved.name,
+  password: '',
+  number: saved.number,
+  remember: saved.remember,
+})
 const block = ref(false)
 
 const sendRegister = async () => {
@@ -83,7 +92,7 @@ const sendRegister = async () => {
   setTimeout(() => {
     block.value = false
   }, 3000)
-  await userStore.exist(user.value.number, user.value.password, user.value.name)
+  await userStore.exist(user.value.number, user.value.password, user.value.name, user.value.remember)
 
 }
 </script>
